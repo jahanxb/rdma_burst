@@ -1156,8 +1156,7 @@ int main(int argc, char **argv)
 			mmap_flags = PROT_READ | PROT_WRITE;
 		}
 		else {
-		        umask(0);
-			fd = open(cfg.fname, O_RDWR | O_CREAT | O_TRUNC | O_DIRECT);
+		        fd = open(cfg.fname, O_RDWR | O_CREAT | O_TRUNC | O_DIRECT, S_IRUSR | S_IWUSR);
 			mmap_flags = PROT_READ | PROT_WRITE;
 		}
 		
