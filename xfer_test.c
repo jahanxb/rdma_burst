@@ -310,7 +310,7 @@ void *fread_thread(void *arg) {
 	int n;
 
 	bytes_read = 0;
-	while (bytes_read < cfg->bytes) {
+	while (RUN && (bytes_read < cfg->bytes)) {
 		slab_bytes = psd_slabs_buf_count_bytes_free(cfg->slab, PSB_WRITE);
 		if (slab_bytes == 0) {
 			psd_slabs_buf_write_swap(cfg->slab, 0);
@@ -434,6 +434,7 @@ void *rdma_poll_thread(void *arg) {
 	while (1) {
 		xfer_rdma_wait_os_event(cfg->ctx, &pinfo);
 
+		pthread_mutex_lock(&total_mutex);
 		hptr = (XFER_RDMA_buf_handle*)
 			psd_slabs_buf_get_priv_data(cfg->slab, PSB_CURR);
 		
@@ -444,15 +445,13 @@ void *rdma_poll_thread(void *arg) {
 			break;
 		}
 
-		pthread_mutex_lock(&total_mutex);
 		sent--;
 		total_bytes += hptr->local_size;
 		send_queued -= hptr->local_size;
-
-		if (cfg->bytes)
-			psd_slabs_buf_read_swap(cfg->slab, 0);
-
 		pthread_mutex_unlock(&total_mutex);
+
+		if (cfg->fname)
+		  psd_slabs_buf_read_swap(cfg->slab, 0);
 	}
 
 	pthread_exit(NULL);
@@ -628,20 +627,16 @@ int do_rdma_client(struct xfer_config *cfg) {
         if (cfg->interval)
 		pthread_cond_signal(&report_cond);
 
-	if (cfg->bytes) {
+	if (cfg->fname) {
 		pthread_join(rthr, NULL);
+		pthread_cancel(rwthr);
 	}
-	else {		
-		int c = psd_slabs_buf_get_pcount(cfg->slab);
-		for (i=0; i<c; i++)
-			cfg->slab->entries[i]->status |= PSB_SEND_READY;
-			
+	else {
+	        int c = psd_slabs_buf_get_pcount(cfg->slab);
+	        for (i=0; i<c; i++)
+	           cfg->slab->entries[i]->status |= PSB_SEND_READY;
 		pthread_join(rwthr, NULL);
 	}
-	
-	// finish up
-	while (sent > 0)
-		usleep(100);
 	
 	pthread_cancel(pthr);
 	
@@ -730,52 +725,27 @@ int do_rdma_server(struct xfer_config *cfg) {
                 pthread_cond_signal(&report_cond);
 	
 	bytes_recv = 0;
-	if (cfg->fname) {
-		while (bytes_recv < cfg->bytes) {
-			slab_bytes = psd_slabs_buf_count_bytes_free(cfg->slab, PSB_CURR);
-			if (slab_bytes == 0) {
-				psd_slabs_buf_write_swap(cfg->slab, 0);
-				slab_bytes = psd_slabs_buf_count_bytes_free(cfg->slab, PSB_CURR);
-			}
-			
-			// get remainder if necessary
-			if ((cfg->bytes - bytes_recv) < slab_bytes)
-				slab_bytes = (cfg->bytes - bytes_recv);
-			
-			
-			psd_slabs_buf_advance(cfg->slab, slab_bytes, PSB_CURR);
-			bytes_recv += slab_bytes;
-			
-			if (bytes_recv == cfg->bytes) {
-				psd_slabs_buf_write_swap(cfg->slab, 0);
-				break;
-			}
-		}
-		psd_slabs_buf_write_swap(cfg->slab, 0);
-		pthread_join(wthr, NULL);
-	}
-	else {
-		while (1) {
-			hptr = (XFER_RDMA_buf_handle*)
-                                psd_slabs_buf_get_priv_data(cfg->slab, PSB_CURR);
-			
-			n = recv(cfg->cntl_sock, &msg, sizeof(struct message), MSG_WAITALL);
-			if (n <= 0) {
-				fprintf(stderr, "RDMA control conn failed\n");
-				diep("recv");
-			}
 
-			if (msg.type == MSG_STOP)
-				break;
-			
-			if (msg.type == MSG_DONE)
-				{}
-			
-			psd_slabs_buf_curr_swap(cfg->slab);
+	while (1) {	  
+	  n = recv(cfg->cntl_sock, &msg, sizeof(struct message), MSG_WAITALL);
+	  if (n <= 0) {
+	    fprintf(stderr, "RDMA control conn failed\n");
+	    diep("recv");
+	  }
+	  
+	  if (msg.type == MSG_STOP)
+	    break;
+	  
+	  if (msg.type == MSG_DONE)
+	    {}
 
-			bytes_recv += hptr->local_size;
-			total_bytes = bytes_recv;
-		}
+	  hptr = (XFER_RDMA_buf_handle*)
+	    psd_slabs_buf_get_priv_data(cfg->slab, PSB_CURR);
+
+	  psd_slabs_buf_curr_swap(cfg->slab);
+	  
+	  bytes_recv += hptr->local_size;
+	  total_bytes = bytes_recv;
 	}
 
 	gettimeofday(&end_time, NULL);
@@ -974,6 +944,7 @@ static void usage(const char *argv0)
 	printf("  -p <port#>             listen on/connect to control port <port> (default 9930)\n");
 	printf("  -q <port#>             RDMA CMA port (default 18515)\n");
 	printf("  -l <size [M,G]>        size of message to exchange (default 1MB)\n");
+	printf("  -n <bytes>             number of bytes to exchange\b");
 	printf("  -i <secs>              update interval in seconds\n");
 	printf("  -t <secs>              duration of test in seconds\n");
 	printf("  -f <path>              infile (client) | outfile (server)\n");
@@ -1205,8 +1176,9 @@ int main(int argc, char **argv)
 		if (client) {
 			fstat(fd, &stat_buf);
 			fsize = stat_buf.st_size;
-			cfg.bytes = fsize;
-			printf("file size: %lu\n", fsize);
+			if (!cfg.bytes)
+			  cfg.bytes = fsize;
+			printf("file size: %lu (to transfer: %lu)\n", fsize, cfg.bytes);
 		}
 		cfg.fd = fd;
 	}
