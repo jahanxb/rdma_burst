@@ -310,7 +310,7 @@ void *fread_thread(void *arg) {
 	int n;
 
 	bytes_read = 0;
-	while (RUN && (bytes_read < cfg->bytes)) {
+	while ((bytes_read < cfg->bytes)) {
 		slab_bytes = psd_slabs_buf_count_bytes_free(cfg->slab, PSB_WRITE);
 		if (slab_bytes == 0) {
 			psd_slabs_buf_write_swap(cfg->slab, 0);
@@ -433,11 +433,7 @@ void *rdma_poll_thread(void *arg) {
 
 	while (1) {
 		xfer_rdma_wait_os_event(cfg->ctx, &pinfo);
-
-		pthread_mutex_lock(&total_mutex);
-		hptr = (XFER_RDMA_buf_handle*)
-			psd_slabs_buf_get_priv_data(cfg->slab, PSB_CURR);
-		
+				
 		msg.type = MSG_DONE;
 		n = send(cfg->cntl_sock, &msg, sizeof(struct message), 0);
 		if (n <= 0) {
@@ -445,9 +441,10 @@ void *rdma_poll_thread(void *arg) {
 			break;
 		}
 
+		pthread_mutex_lock(&total_mutex);
 		sent--;
-		total_bytes += hptr->local_size;
-		send_queued -= hptr->local_size;
+		total_bytes += psd_slabs_buf_get_psize(cfg->slab);
+		send_queued -= psd_slabs_buf_get_psize(cfg->slab);
 		pthread_mutex_unlock(&total_mutex);
 
 		if (cfg->fname)
@@ -469,12 +466,6 @@ void *rdma_write_thread(void *arg) {
 	clock_gettime(CLOCK_REALTIME, &startup);
 	
 	while (RUN || (total_bytes < cfg->bytes)) {
-		// wait for the next available buffer to send
-		psd_slabs_buf_wait_curr(cfg->slab, PSB_READ);
-		
-		hptr = (XFER_RDMA_buf_handle*)
-			psd_slabs_buf_get_priv_data(cfg->slab, PSB_CURR);
-		
 		if (cfg->bandwidth == 0.0) {
 			bytes_allowed = 0xFFFFFFFFFFFFFFFF;
 		} else {
@@ -487,21 +478,27 @@ void *rdma_write_thread(void *arg) {
 			bytes_allowed = dtmp;
 		}
 		
-		pthread_mutex_lock(&total_mutex);
 		if ((sent < cfg->tx_depth) &&
 		    (total_bytes + send_queued) < bytes_allowed) {
+
+		        // wait for the next available buffer to send
+		        psd_slabs_buf_wait_curr(cfg->slab, PSB_READ);
+		       
+		        hptr = (XFER_RDMA_buf_handle*)
+			  psd_slabs_buf_get_priv_data(cfg->slab, PSB_CURR);
+		
 			xfer_rdma_post_os_put(&hptr, 1);
 			psd_slabs_buf_curr_swap(cfg->slab);
 			
+			pthread_mutex_lock(&total_mutex);
 			send_queued += hptr->local_size;
 			sent++;
+			pthread_mutex_unlock(&total_mutex);
 		}
 		else {
-			pthread_mutex_unlock(&total_mutex);
-			usleep(100);
+		        usleep(100);
 			continue;
 		}
-		pthread_mutex_unlock(&total_mutex);
 	}
 	pthread_exit(NULL);
 }
@@ -1155,11 +1152,12 @@ int main(int argc, char **argv)
 		uint64_t fsize;
 		
 		if (client) {
-			fd = open(cfg.fname, O_RDONLY);
+			fd = open(cfg.fname, O_RDONLY | O_DIRECT);
 			mmap_flags = PROT_READ | PROT_WRITE;
 		}
 		else {
-			fd = open(cfg.fname, O_RDWR | O_CREAT | O_TRUNC);
+		        umask(0);
+			fd = open(cfg.fname, O_RDWR | O_CREAT | O_TRUNC | O_DIRECT);
 			mmap_flags = PROT_READ | PROT_WRITE;
 		}
 		

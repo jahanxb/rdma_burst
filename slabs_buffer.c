@@ -205,7 +205,7 @@ void psd_slabs_buf_read_swap(psdSLAB *slab, int total) {
 		slab->entries[slab->r_index]->empty = TRUE;
 		slab->entries[slab->r_index]->ptr = slab->entries[slab->r_index]->base;
                 slab->entries[slab->r_index]->write_amount = 0;
-		slab->entries[slab->r_index]->status |= PSB_RECV_READY;
+		slab->entries[slab->r_index]->status = PSB_RECV_READY;
 
 		// signal that we finished reading from this buf entry
 		pthread_cond_signal(&(slab->read_cond));
@@ -251,7 +251,7 @@ void psd_slabs_buf_write_swap(psdSLAB *slab, int total) {
 		slab->entries[slab->w_index]->empty = FALSE;
 		slab->entries[slab->w_index]->ptr = slab->entries[slab->w_index]->base;
                 slab->entries[slab->w_index]->read_amount = 0;
-		slab->entries[slab->w_index]->status |= PSB_SEND_READY;
+		slab->entries[slab->w_index]->status = PSB_SEND_READY;
 
 		// signal that we finished writing this buf entry
 		pthread_cond_signal(&(slab->write_cond));
@@ -296,7 +296,7 @@ void psd_slabs_buf_advance(psdSLAB *slab, uint64_t bytes, int side) {
 	if (side == PSB_WRITE)
 		slab->entries[ind]->write_amount += bytes;
 	else if (side == PSB_READ)
-		slab->entries[ind]->read_amount += bytes;       
+		slab->entries[ind]->read_amount += bytes;
 }
 
 uint64_t psd_slabs_buf_count_bytes(psdSLAB *slab, int side) {
