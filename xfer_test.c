@@ -64,7 +64,6 @@ struct xfer_data data = {
 #endif
 
 static struct timespec startup;
-static pthread_mutex_t total_mutex;
 static pthread_cond_t report_cond;
 static pthread_mutex_t report_mutex;
 static size_t total_bytes;
@@ -112,6 +111,7 @@ struct xfer_config {
   double bandwidth;
   struct xfer_context *ctx;
   int use_splice;
+  int use_rdma;
   int affinity;
 };
 
@@ -375,6 +375,17 @@ void *fwrite_thread(void *arg) {
     if (slab_bytes == 0) {
       psd_slabs_buf_read_swap(cfg->slab, 0);
       slab_bytes = psd_slabs_buf_count_bytes_free(cfg->slab, PSB_READ);
+
+      if (cfg->use_rdma) {
+	// send ACK
+	struct message msg;
+	msg.type = MSG_ACK;
+	n = send(cfg->cntl_sock, &msg, sizeof(struct message), 0);
+	if (n < 0) {
+	  fprintf(stderr, "RDMA control channel failed\n");
+	  diep("send");
+	}
+      }
     }
 
     // we got signaled with nothing to read, so exit
@@ -457,7 +468,7 @@ void *rdma_poll_thread(void *arg) {
   XFER_RDMA_buf_handle *hptr;
   XFER_RDMA_poll_info pinfo;
   struct message msg;
-  int n;
+  int n, unacked = 0;
 
   while (1) {
     xfer_rdma_wait_os_event(cfg->ctx, &pinfo);
@@ -469,11 +480,18 @@ void *rdma_poll_thread(void *arg) {
       break;
     }
 
-    pthread_mutex_lock(&total_mutex);
-    sent--;
-    send_queued -= psd_slabs_buf_get_psize(cfg->slab);
-    pthread_mutex_unlock(&total_mutex);
+    __sync_fetch_and_add(&sent, -1);
+    __sync_fetch_and_add(&send_queued, -psd_slabs_buf_get_psize(cfg->slab));
 
+    if (++unacked >= psd_slabs_buf_get_pcount(cfg->slab)) {
+      n = recv(cfg->cntl_sock, &msg, sizeof(struct message), MSG_WAITALL);
+      if (n < 0) {
+	fprintf(stderr, "RDMA control channel failed\n");
+	diep("recv");
+      }
+      --unacked;
+    }
+    
     if (cfg->fname)
       psd_slabs_buf_read_swap(cfg->slab, 0);
   }
@@ -493,7 +511,7 @@ void *rdma_write_thread(void *arg) {
   clock_gettime(CLOCK_REALTIME, &startup);
 
   bytes_left = cfg->bytes;
-  while (RUN || bytes_left) {
+  while (RUN && bytes_left) {
     if (cfg->bandwidth == 0.0) {
       bytes_allowed = 0xFFFFFFFFFFFFFFFF;
     }
@@ -527,12 +545,10 @@ void *rdma_write_thread(void *arg) {
       
       psd_slabs_buf_curr_swap(cfg->slab);
 
-      pthread_mutex_lock(&total_mutex);
       bytes_left -= send_amt;
-      send_queued += send_amt;
-      total_bytes += send_amt;
-      sent++;
-      pthread_mutex_unlock(&total_mutex);
+      __sync_fetch_and_add(&send_queued, send_amt);
+      __sync_fetch_and_add(&total_bytes, send_amt);
+      __sync_fetch_and_add(&sent, 1);
     }
     else {
       usleep(100);
@@ -619,8 +635,12 @@ int do_rdma_client(struct xfer_config *cfg) {
     return -1;
   }
 
-  recv(cfg->cntl_sock, &msg, sizeof(struct message), MSG_WAITALL);
-
+  n = recv(cfg->cntl_sock, &msg, sizeof(struct message), MSG_WAITALL);
+  if (n < 0) {
+    fprintf(stderr, "RDMA control channel failed\n");
+    diep("recv");
+  }
+  
   ctx = xfer_rdma_client_connect(&data);
   if (!ctx) {
     fprintf(stderr, "could not get client context\n");
@@ -704,7 +724,7 @@ int do_rdma_server(struct xfer_config *cfg) {
   struct message msg;
   struct sockaddr_in cliaddr;
   struct timeval start_time, end_time;
-  size_t bytes_recv, total_recv;
+  size_t bytes_recv, to_recv;
   size_t slab_bytes;
 
   clilen = sizeof(cliaddr);
@@ -737,10 +757,11 @@ int do_rdma_server(struct xfer_config *cfg) {
 
   // get remote slab info
   pdata = data.remote_priv;
-  cfg->buflen = total_recv = pdata->buflen;
+  cfg->buflen = pdata->buflen;
   cfg->slab_order = pdata->slab_order;
   cfg->slab_parts = pdata->slab_parts;
-
+  to_recv = pdata->fsize;
+  
   if (rdma_slab_bufs_reg(cfg))
     return -1;
 
@@ -752,7 +773,7 @@ int do_rdma_server(struct xfer_config *cfg) {
     xfer_rdma_wait_done(hptr);
     psd_slabs_buf_curr_swap(cfg->slab);
   }
-
+  
   printf("Metadata exchange complete\n");
 
   if (cfg->fname) {
@@ -763,8 +784,6 @@ int do_rdma_server(struct xfer_config *cfg) {
 
   if (cfg->interval)
     pthread_cond_signal(&report_cond);
-
-  bytes_recv = 0;
 
   while (1) {
     n = recv(cfg->cntl_sock, &msg, sizeof(struct message), MSG_WAITALL);
@@ -777,22 +796,17 @@ int do_rdma_server(struct xfer_config *cfg) {
       break;
 
     if (msg.type == MSG_DONE) {
-      hptr = (XFER_RDMA_buf_handle*)
-             psd_slabs_buf_get_priv_data(cfg->slab, PSB_CURR);
+      n = psd_slabs_buf_get_psize(cfg->slab);
+      if ((n + bytes_recv) > to_recv)
+	n = (to_recv - bytes_recv);
 
-      bytes_recv += hptr->local_size;
-      if ((bytes_recv + total_bytes) > total_recv)
-	total_bytes += (total_recv - total_bytes);
-      else
-	total_bytes += bytes_recv;
-
-      // send ACK
-      msg.type = MSG_ACK;
-      n = send(cfg->cntl_sock, &msg, sizeof(struct message), 0);
-      if (n < 0) {
-	fprintf(stderr, "RDMA control channel failed\n");
-	diep("send");
+      if (cfg->fname) {
+	psd_slabs_buf_advance(cfg->slab, n, PSB_WRITE);
+	psd_slabs_buf_write_swap(cfg->slab, 0);
       }
+
+      bytes_recv += n;
+      total_bytes = bytes_recv;
     }
   }
 
@@ -1035,6 +1049,7 @@ int main(int argc, char **argv) {
     .bandwidth = 0.0,
     .ctx = NULL,
     .use_splice = 0,
+    .use_rdma = 0,
     .affinity = -1
   };
 
@@ -1044,7 +1059,6 @@ int main(int argc, char **argv) {
   int fd = -1;
   int c;
   int client = 1;
-  int use_rdma = 0;
   int len;
   unsigned mult = 1;
 
@@ -1099,7 +1113,7 @@ int main(int argc, char **argv) {
       cfg.bytes = atol(optarg);
       break;
     case 'r':
-      use_rdma = 1;
+      cfg.use_rdma = 1;
       break;
     case 'i':
       cfg.interval = atoi(optarg);
@@ -1135,7 +1149,7 @@ int main(int argc, char **argv) {
   }
 
 #ifndef HAVE_RDMA
-  if (use_rdma) {
+  if (cfg.use_rdma) {
     fprintf(stderr, "Please compile with RDMA support.\n");
     exit(1);
   }
@@ -1174,7 +1188,7 @@ int main(int argc, char **argv) {
   if (cfg.slab_order > 0)
     cfg.buflen = (1UL << cfg.slab_order);
 
-  if (!use_rdma) {
+  if (!cfg.use_rdma) {
     cfg.slab = psd_slabs_buf_create(cfg.buflen, cfg.slab_parts);
     if (!cfg.slab) {
       fprintf(stderr, "could not allocate SLAB buffer\n");
@@ -1200,9 +1214,6 @@ int main(int argc, char **argv) {
     }
 #endif
   }
-
-  if (use_rdma)
-    pthread_mutex_init(&total_mutex, NULL);
 
   if (cfg.time)
     pthread_create(&tthr, NULL, time_thread, &cfg.time);
@@ -1283,7 +1294,7 @@ int main(int argc, char **argv) {
   if (client) {
     signal(SIGINT, do_stop);
 #ifdef HAVE_RDMA
-    if (use_rdma)
+    if (cfg.use_rdma)
       do_rdma_client(&cfg);
 
     else
@@ -1292,7 +1303,7 @@ int main(int argc, char **argv) {
   }
   else {
 #ifdef HAVE_RDMA
-    if (use_rdma)
+    if (cfg.use_rdma)
 
       do_rdma_server(&cfg);
     else
