@@ -8,7 +8,8 @@ struct message {
   enum {
     MSG_READY,
     MSG_DONE,
-    MSG_STOP
+    MSG_STOP,
+    MSG_ACK
   } type;
 
   struct ibv_mr mr;

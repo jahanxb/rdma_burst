@@ -9,6 +9,7 @@
 #include <sys/socket.h>
 #include <sys/time.h>
 #include <sys/mman.h>
+#include <sys/sendfile.h>
 #include <unistd.h>
 #include <netdb.h>
 #include <pthread.h>
@@ -41,6 +42,8 @@
 #define AF_INET_SDP 27
 #endif
 
+#define BLOCK_SIZE (1<<23)
+
 // SOME GLOBALS
 
 #ifdef HAVE_RDMA
@@ -64,8 +67,8 @@ static struct timespec startup;
 static pthread_mutex_t total_mutex;
 static pthread_cond_t report_cond;
 static pthread_mutex_t report_mutex;
-static uint64_t total_bytes;
-static uint64_t send_queued;
+static size_t total_bytes;
+static size_t send_queued;
 static int RUN;
 static int sent;
 static long page_size;
@@ -79,8 +82,8 @@ static cpu_set_t cpu_set;              /* processor CPU set */
 
 // some xfer structs
 struct mdata {
-  uint64_t buflen;
-  uint64_t fsize;
+  size_t buflen;
+  size_t fsize;
   uint32_t slab_order;
   uint32_t slab_parts;
 };
@@ -98,10 +101,10 @@ struct xfer_config {
   int use_sdp;
   int interval;
   int time;
-  uint64_t buflen;
+  size_t buflen;
 
   void *buf;
-  uint64_t bytes;
+  size_t bytes;
   psdSLAB *slab;
   int slab_order;
   int slab_parts;
@@ -203,7 +206,7 @@ double difftv(struct timeval *start, struct timeval *end) {
 double difftv(struct timeval *start, struct timeval *end);
 #endif
 
-char* print_bytes(uint64_t b, int bits) {
+char* print_bytes(double b, int bits) {
   char ret[64];
   char val = 'B';
   int bb = 1;
@@ -225,16 +228,42 @@ char* print_bytes(uint64_t b, int bits) {
   return strdup(ret);
 }
 
-void print_bw(struct timeval *s, struct timeval *e, uint64_t b) {
-  uint64_t rate = (uint64_t)b/difftv(s, e);
+void print_bw(struct timeval *s, struct timeval *e, size_t b) {
+  double rate = (double)b/difftv(s, e);
   printf("[0.0-%.1f sec]\t%14s\t%14s/s\tbytes: %llu\n", difftv(s, e),
          print_bytes(b, 0), print_bytes(rate, 1), b);
 }
 
+int do_sendfile(struct xfer_config *cfg, int ifd, int ofd, size_t len) {
+  int n;
+  size_t bytes_left = len;
+  size_t send_amt;
+
+  while (bytes_left > 0) {
+
+    if (bytes_left > BLOCK_SIZE) {
+      send_amt = BLOCK_SIZE;
+    }
+    else {
+      send_amt = bytes_left;
+    }
+
+    n = sendfile(ofd, ifd, NULL, send_amt);
+    if (n < 0) {
+      fprintf(stderr, "sendfile failed: %s\n", strerror(errno));
+      return -1;
+    }
+
+    bytes_left -= n;
+    total_bytes += n;
+  }
+  return len;
+}
+
 int splice_fds(struct xfer_config *cfg, int ifd, int ofd, size_t len) {
   int n;
-  uint64_t bytes_left = len;
-  uint64_t send_amt;
+  size_t bytes_left = len;
+  size_t send_amt;
 
   while (bytes_left > 0) {
 
@@ -258,15 +287,15 @@ int splice_fds(struct xfer_config *cfg, int ifd, int ofd, size_t len) {
     }
 
     bytes_left -= n;
+    total_bytes += len;
   }
-  total_bytes += len;
   return len;
 }
 
 int vmsplice_to_fd(struct xfer_config *cfg, int fd, void *buf, size_t len) {
   int n;
-  uint64_t bytes_left = len;
-  uint64_t send_amt;
+  size_t bytes_left = len;
+  size_t send_amt;
   char *rbuf = buf;
   struct iovec iov;
 
@@ -296,15 +325,15 @@ int vmsplice_to_fd(struct xfer_config *cfg, int fd, void *buf, size_t len) {
 
     rbuf += n;
     bytes_left -= n;
+    total_bytes += len;
   }
-  total_bytes += len;
   return len;
 }
 
 void *fread_thread(void *arg) {
   struct xfer_config *cfg = arg;
-  uint64_t bytes_read;
-  uint64_t slab_bytes;
+  size_t bytes_read;
+  size_t slab_bytes;
   char *slab_buf_addr;
   int n;
 
@@ -335,8 +364,8 @@ void *fread_thread(void *arg) {
 
 void *fwrite_thread(void *arg) {
   struct xfer_config *cfg = arg;
-  uint64_t bytes_sent;
-  uint64_t slab_bytes;
+  size_t bytes_sent;
+  size_t slab_bytes;
   char *slab_buf_addr;
   int n;
 
@@ -395,7 +424,7 @@ void *bw_report_thread(void *arg) {
   struct timespec sleep_time;
   struct timespec remaining_time;
 
-  uint64_t prev_bytes, diff_bytes;
+  size_t prev_bytes, diff_bytes;
 
   pthread_mutex_lock(&report_mutex);
   pthread_cond_wait(&report_cond, &report_mutex);
@@ -415,7 +444,7 @@ void *bw_report_thread(void *arg) {
     diff_bytes = (total_bytes - prev_bytes);
     gettimeofday(&curr_time, NULL);
 
-    uint64_t rate = (uint64_t)diff_bytes/difftv(&prev_time, &curr_time);
+    size_t rate = (size_t)diff_bytes/difftv(&prev_time, &curr_time);
     printf("[%.1f-%.1f sec]\t%14s\t%14s/s\n", (float)step, (float)(step + *interval),
            print_bytes(diff_bytes, 0), print_bytes(rate, 1));
     step += *interval;
@@ -442,7 +471,6 @@ void *rdma_poll_thread(void *arg) {
 
     pthread_mutex_lock(&total_mutex);
     sent--;
-    total_bytes += psd_slabs_buf_get_psize(cfg->slab);
     send_queued -= psd_slabs_buf_get_psize(cfg->slab);
     pthread_mutex_unlock(&total_mutex);
 
@@ -455,8 +483,8 @@ void *rdma_poll_thread(void *arg) {
 
 void *rdma_write_thread(void *arg) {
   struct xfer_config *cfg = arg;
-  XFER_RDMA_buf_handle *hptr;
-  uint64_t bytes_allowed;
+  XFER_RDMA_buf_handle hndl, *hptr;
+  size_t bytes_allowed, send_amt, bytes_left;
   struct message msg;
   struct timespec now;
   int n;
@@ -464,7 +492,8 @@ void *rdma_write_thread(void *arg) {
 
   clock_gettime(CLOCK_REALTIME, &startup);
 
-  while (RUN || (total_bytes < cfg->bytes)) {
+  bytes_left = cfg->bytes;
+  while (RUN || bytes_left) {
     if (cfg->bandwidth == 0.0) {
       bytes_allowed = 0xFFFFFFFFFFFFFFFF;
     }
@@ -484,14 +513,24 @@ void *rdma_write_thread(void *arg) {
       // wait for the next available buffer to send
       psd_slabs_buf_wait_curr(cfg->slab, PSB_READ);
 
-      hptr = (XFER_RDMA_buf_handle*)
-             psd_slabs_buf_get_priv_data(cfg->slab, PSB_CURR);
+      hndl = *(XFER_RDMA_buf_handle*)
+	psd_slabs_buf_get_priv_data(cfg->slab, PSB_CURR);
 
+      if (bytes_left > hndl.local_size)
+	send_amt = hndl.local_size;
+      else
+	send_amt = bytes_left;
+      
+      hndl.local_size = send_amt;
+      hptr = &hndl;
       xfer_rdma_post_os_put(&hptr, 1);
+      
       psd_slabs_buf_curr_swap(cfg->slab);
 
       pthread_mutex_lock(&total_mutex);
-      send_queued += hptr->local_size;
+      bytes_left -= send_amt;
+      send_queued += send_amt;
+      total_bytes += send_amt;
       sent++;
       pthread_mutex_unlock(&total_mutex);
     }
@@ -559,7 +598,7 @@ int do_rdma_client(struct xfer_config *cfg) {
 
   struct message msg;
   struct timeval start_time, end_time;
-  uint64_t slab_bytes;
+  size_t slab_bytes;
 
   struct mdata pdata = {
     .buflen = cfg->buflen,
@@ -665,8 +704,8 @@ int do_rdma_server(struct xfer_config *cfg) {
   struct message msg;
   struct sockaddr_in cliaddr;
   struct timeval start_time, end_time;
-  uint64_t bytes_recv;
-  uint64_t slab_bytes;
+  size_t bytes_recv, total_recv;
+  size_t slab_bytes;
 
   clilen = sizeof(cliaddr);
 
@@ -683,8 +722,12 @@ int do_rdma_server(struct xfer_config *cfg) {
 
   // sync with the client
   msg.type = MSG_READY;
-  send(cfg->cntl_sock, &msg, sizeof(struct message), 0);
-
+  n = send(cfg->cntl_sock, &msg, sizeof(struct message), 0);
+  if (n <= 0) {
+    fprintf(stderr, "RDMA control conn failed\n");
+    diep("recv");
+  }      
+  
   ctx = xfer_rdma_server_connect(&data);
   if (!ctx) {
     fprintf(stderr, "could not get client context\n");
@@ -694,7 +737,7 @@ int do_rdma_server(struct xfer_config *cfg) {
 
   // get remote slab info
   pdata = data.remote_priv;
-  cfg->buflen = pdata->buflen;
+  cfg->buflen = total_recv = pdata->buflen;
   cfg->slab_order = pdata->slab_order;
   cfg->slab_parts = pdata->slab_parts;
 
@@ -738,7 +781,18 @@ int do_rdma_server(struct xfer_config *cfg) {
              psd_slabs_buf_get_priv_data(cfg->slab, PSB_CURR);
 
       bytes_recv += hptr->local_size;
-      total_bytes = bytes_recv;
+      if ((bytes_recv + total_bytes) > total_recv)
+	total_bytes += (total_recv - total_bytes);
+      else
+	total_bytes += bytes_recv;
+
+      // send ACK
+      msg.type = MSG_ACK;
+      n = send(cfg->cntl_sock, &msg, sizeof(struct message), 0);
+      if (n < 0) {
+	fprintf(stderr, "RDMA control channel failed\n");
+	diep("send");
+      }
     }
   }
 
@@ -762,22 +816,21 @@ int do_socket_client(struct xfer_config *cfg) {
   struct timeval start_time, end_time;
 
   int s, n;
-  uint64_t send_len;
-  uint64_t slab_bytes;
-  uint64_t bytes_sent;
+  size_t send_len;
+  size_t slab_bytes;
+  size_t bytes_sent;
   char *buf;
 
   s = socket_client_connect(cfg, cfg->host);
 
   gettimeofday(&start_time, NULL);
-
-  // should use sendfile here if use_splice is specified
+  
   if (cfg->fname)
     pthread_create(&rthr, NULL, fread_thread, (void*)cfg);
 
   if (cfg->interval)
     pthread_cond_signal(&report_cond);
-
+  
   bytes_sent = 0;
   if (cfg->bytes) {
     while (bytes_sent < cfg->bytes) {
@@ -853,8 +906,8 @@ int do_socket_server(struct xfer_config *cfg) {
   struct sockaddr_in cliaddr;
   int s, n, lfd, clilen;
 
-  uint64_t bytes_recv;
-  uint64_t slab_bytes;
+  size_t bytes_recv;
+  size_t slab_bytes;
   char *buf;
 
   lfd = socket_server_start(cfg);
@@ -884,12 +937,13 @@ int do_socket_server(struct xfer_config *cfg) {
 
         buf = psd_slabs_buf_addr(cfg->slab, PSB_WRITE);
 
-        n = recv(s, buf, slab_bytes, 0);
-        if (n < 0) {
-          perror("recv:");
+	n = recv(s, buf, slab_bytes, 0);
+	if (n < 0) {
+	  perror("recv:");
           break;
-        }
-        if (!n) {
+	}
+
+	if (!n) {
           psd_slabs_buf_write_swap(cfg->slab, 0);
           break;
         }
@@ -898,7 +952,6 @@ int do_socket_server(struct xfer_config *cfg) {
         bytes_recv += n;
         total_bytes = bytes_recv;
       }
-      psd_slabs_buf_write_swap(cfg->slab, 0);
       pthread_join(wthr, NULL);
     }
     else {
@@ -975,14 +1028,14 @@ int main(int argc, char **argv) {
     .bytes = 0,
     .interval = 0,
     .time = 10,
-    .buflen = 1024*1024,
+    .buflen = (1<<24),
     .slab_order = 0,
-    .slab_parts = 1,
+    .slab_parts = 2,
     .tx_depth = 16,
     .bandwidth = 0.0,
     .ctx = NULL,
-    .use_splice=0,
-    .affinity=-1
+    .use_splice = 0,
+    .affinity = -1
   };
 
   pthread_t rthr;
@@ -1157,7 +1210,7 @@ int main(int argc, char **argv) {
   if (cfg.fname) {
     int mmap_flags;
     struct stat stat_buf;
-    uint64_t fsize;
+    size_t fsize;
 
     if (client) {
       fd = open(cfg.fname, O_RDONLY | O_DIRECT);
