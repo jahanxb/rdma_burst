@@ -41,8 +41,6 @@
 #define AF_INET_SDP 27
 #endif
 
-#define SPLICE_SIZE (64*1024)
-
 // SOME GLOBALS
 
 #ifdef HAVE_RDMA
@@ -70,7 +68,8 @@ static uint64_t total_bytes;
 static uint64_t send_queued;
 static int RUN;
 static int sent;
-static int page_size;
+static long page_size;
+static long splice_size;
 static int fdnull = -1;
 
 #ifdef HAVE_SETAFFINITY
@@ -239,20 +238,20 @@ int splice_fds(struct xfer_config *cfg, int ifd, int ofd, size_t len) {
 
   while (bytes_left > 0) {
 
-    if (bytes_left > SPLICE_SIZE) {
-      send_amt = SPLICE_SIZE;
+    if (bytes_left > splice_size) {
+      send_amt = splice_size;
     }
     else {
       send_amt = bytes_left;
     }
 
-    n = splice(ifd, 0, cfg->pipe[1], 0, send_amt, SPLICE_F_NONBLOCK);
+    n = splice(ifd, 0, cfg->pipe[1], 0, send_amt, SPLICE_F_MORE);
     if (n < 0) {
       fprintf(stderr, "src splice failed: %s\n", strerror(errno));
       return -1;
     }
 
-    n = splice(cfg->pipe[0], 0, ofd, 0, n, 0);
+    n = splice(cfg->pipe[0], 0, ofd, 0, n, SPLICE_F_MORE);
     if (n < 0) {
       fprintf(stderr, "dst splice failed: %s\n", strerror(errno));
       return -1;
@@ -273,8 +272,8 @@ int vmsplice_to_fd(struct xfer_config *cfg, int fd, void *buf, size_t len) {
 
   while (bytes_left > 0) {
 
-    if (bytes_left > SPLICE_SIZE) {
-      send_amt = SPLICE_SIZE;
+    if (bytes_left > splice_size) {
+      send_amt = splice_size;
     }
     else {
       send_amt = bytes_left;
@@ -283,13 +282,13 @@ int vmsplice_to_fd(struct xfer_config *cfg, int fd, void *buf, size_t len) {
     iov.iov_base = rbuf;
     iov.iov_len = send_amt;
 
-    n = vmsplice(cfg->pipe[1], &iov, 1, 0);
+    n = vmsplice(cfg->pipe[1], &iov, 1, SPLICE_F_MORE);
     if (n < 0) {
       fprintf(stderr, "vmsplice failed: %s", strerror(errno));
       return -1;
     }
 
-    n = splice(cfg->pipe[0], 0, fd, 0, send_amt, 0);
+    n = splice(cfg->pipe[0], 0, fd, 0, send_amt, SPLICE_F_MORE);
     if (n < 0) {
       fprintf(stderr, "splice failed: %s", strerror(errno));
       return -1;
@@ -910,7 +909,6 @@ int do_socket_server(struct xfer_config *cfg) {
         if (cfg->use_splice) {
           // from socket to /dev/null
           splice_fds(cfg, s, fdnull, slab_bytes);
-          // TODO: splice to buf, file
         }
         else {
           n = recv(s, buf, slab_bytes, 0);
@@ -946,7 +944,7 @@ static void usage(const char *argv0) {
   printf("  -t <secs>              duration of test in seconds\n");
   printf("  -f <path>              infile (client) | outfile (server)\n");
   printf("  -y <host>              RDMA control channel\n");
-  printf("  -c <host>	         connect to destination host (data channel)\n");
+  printf("  -c <host>	           connect to destination host (data channel)\n");
   printf("  -o <num>               SLAB buffer order (2^x)\n");
   printf("  -a <num>               SLAB partitions\n");
   printf("  -x <host/port>         XSP path signaling\n");
@@ -964,9 +962,9 @@ int main(int argc, char **argv) {
     usage(argv[0]);
     exit(-1);
   }
-
+  
   page_size = sysconf(_SC_PAGESIZE);
-
+  
   struct xfer_config cfg  = {
     .cntl = NULL,
     .host = "127.0.0.1",
@@ -1108,6 +1106,17 @@ int main(int argc, char **argv) {
     exit(-1);
   }
 
+  // maximime effective pipe buffer
+  int rc = 0;
+  do {
+    splice_size = (long) fcntl(cfg.pipe[0], F_GETPIPE_SZ);
+    if (splice_size < 0) {
+      fprintf(stderr, "fcntl failed: %s", strerror(errno));
+      exit(1);
+    }
+    rc = fcntl(cfg.pipe[0], F_SETPIPE_SZ, splice_size*2);
+  } while (rc >= 0); 
+  
   // determine our buffer size if using order
   if (cfg.slab_order > 0)
     cfg.buflen = (1UL << cfg.slab_order);
@@ -1163,11 +1172,6 @@ int main(int argc, char **argv) {
       fprintf(stderr, "could not open file\n");
       return -1;
     }
-
-    // should also handle direct I/O case
-    //if (!use_rdma && !strcmp(cfg.fname, "/dev/zero")) {
-    //	cfg.buf = mmap(0, cfg.buflen, mmap_flags, MAP_PRIVATE | MAP_ANONYMOUS, 0, 0);
-    //}
 
     if (client) {
       fstat(fd, &stat_buf);
