@@ -21,32 +21,31 @@
 #define PSB_RECV_READY   0x40
 
 typedef struct psd_slabs_buf_entry_t {
-	uint64_t size;
-	void *base;
-	void *ptr;
-	void *priv;
-	int empty;
-	uint64_t read_amount;
-	uint64_t write_amount;
-	int status;
+  uint64_t size;
+  void *base;
+  void *ptr;
+  void *priv;
+  int empty;
+  uint64_t read_amount;
+  uint64_t write_amount;
+  int status;
 } bufEntry;
 
-typedef struct psd_slabs_xfer_buf_t
-{
-	bufEntry **entries;
-	int p_count;
-	int r_index;
-	int w_index;
-	int s_index;
-	
-	int status;
-	uint64_t size;
-	uint64_t p_size;
-	uint64_t total_count_bytes;
+typedef struct psd_slabs_xfer_buf_t {
+  bufEntry **entries;
+  int p_count;
+  int r_index;
+  int w_index;
+  int s_index;
 
-	pthread_mutex_t buf_lock;
-	pthread_cond_t read_cond;
-	pthread_cond_t write_cond;
+  int status;
+  uint64_t size;
+  uint64_t p_size;
+  uint64_t total_count_bytes;
+
+  pthread_mutex_t buf_lock;
+  pthread_cond_t read_cond;
+  pthread_cond_t write_cond;
 } psdSLAB;
 
 extern uint64_t buf_total_bytes;
