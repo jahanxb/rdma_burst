@@ -346,14 +346,20 @@ void *fread_thread(void *arg) {
     }
 
     // get remainder if necessary
-    if ((cfg->bytes - bytes_read) < slab_bytes)
-      slab_bytes = (cfg->bytes - bytes_read);
+    if ((cfg->bytes - bytes_read) < slab_bytes) {
+      slab_bytes = page_size;
+    }
 
     slab_buf_addr = psd_slabs_buf_addr(cfg->slab, PSB_WRITE);
     n = read(cfg->fd, slab_buf_addr, slab_bytes);
+    if (n < 0)
+      diep("read");
+    if (n == 0)
+      break;
+    
     psd_slabs_buf_advance(cfg->slab, n, PSB_WRITE);
     bytes_read += n;
-
+	  
     if (bytes_read == cfg->bytes) {
       psd_slabs_buf_write_swap(cfg->slab, 0);
       break;
@@ -364,18 +370,22 @@ void *fread_thread(void *arg) {
 
 void *fwrite_thread(void *arg) {
   struct xfer_config *cfg = arg;
-  size_t bytes_sent;
   size_t slab_bytes;
+  size_t write_bytes;
   char *slab_buf_addr;
   int n;
 
-  bytes_sent = 0;
   while (1) {
     slab_bytes = psd_slabs_buf_count_bytes_free(cfg->slab, PSB_READ);
     if (slab_bytes == 0) {
       psd_slabs_buf_read_swap(cfg->slab, 0);
       slab_bytes = psd_slabs_buf_count_bytes_free(cfg->slab, PSB_READ);
 
+      if (slab_bytes < page_size)
+	write_bytes = page_size;
+      else
+	write_bytes = slab_bytes;
+      
       if (cfg->use_rdma) {
 	// send ACK
 	struct message msg;
@@ -395,18 +405,23 @@ void *fwrite_thread(void *arg) {
     slab_buf_addr = psd_slabs_buf_addr(cfg->slab, PSB_READ);
 
     if (cfg->use_splice) {
-      n = vmsplice_to_fd(cfg, cfg->fd, slab_buf_addr, slab_bytes);
+      n = vmsplice_to_fd(cfg, cfg->fd, slab_buf_addr, write_bytes);
       if (n <= 0)
         break;
     }
     else {
-      n = write(cfg->fd, slab_buf_addr, slab_bytes);
-      if (n <= 0)
-        break;
+      n = write(cfg->fd, slab_buf_addr, write_bytes);
+      if (n < 0)
+	diep("write");
     }
     psd_slabs_buf_advance(cfg->slab, slab_bytes, PSB_READ);
-    bytes_sent += slab_bytes;
   }
+
+  /*
+  n = ftruncate(cfg->fd, cfg->bytes);
+  if (n < 0)
+    diep("ftruncate");
+  */  
 
   pthread_exit(NULL);
 }
@@ -544,8 +559,11 @@ void *rdma_write_thread(void *arg) {
       xfer_rdma_post_os_put(&hptr, 1);
       
       psd_slabs_buf_curr_swap(cfg->slab);
-
+      
       bytes_left -= send_amt;
+
+      //printf("bytes_left: %lu, send_amt: %lu\n", bytes_left, send_amt);
+      
       __sync_fetch_and_add(&send_queued, send_amt);
       __sync_fetch_and_add(&total_bytes, send_amt);
       __sync_fetch_and_add(&sent, 1);
@@ -685,7 +703,7 @@ int do_rdma_client(struct xfer_config *cfg) {
 
   if (cfg->fname) {
     pthread_join(rthr, NULL);
-    pthread_cancel(rwthr);
+    pthread_join(rwthr, NULL);
   }
   else {
     int c = psd_slabs_buf_get_pcount(cfg->slab);
