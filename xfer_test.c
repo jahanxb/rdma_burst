@@ -374,7 +374,7 @@ void *fwrite_thread(void *arg) {
   size_t write_bytes;
   char *slab_buf_addr;
   int n;
-
+  
   while (1) {
     slab_bytes = psd_slabs_buf_count_bytes_free(cfg->slab, PSB_READ);
     if (slab_bytes == 0) {
@@ -417,11 +417,9 @@ void *fwrite_thread(void *arg) {
     psd_slabs_buf_advance(cfg->slab, slab_bytes, PSB_READ);
   }
 
-  /*
   n = ftruncate(cfg->fd, cfg->bytes);
   if (n < 0)
     diep("ftruncate");
-  */  
 
   pthread_exit(NULL);
 }
@@ -484,7 +482,7 @@ void *rdma_poll_thread(void *arg) {
   XFER_RDMA_poll_info pinfo;
   struct message msg;
   int n, unacked = 0;
-
+  
   while (1) {
     xfer_rdma_wait_os_event(cfg->ctx, &pinfo);
 
@@ -504,11 +502,17 @@ void *rdma_poll_thread(void *arg) {
 	fprintf(stderr, "RDMA control channel failed\n");
 	diep("recv");
       }
-      --unacked;
+      if (msg.type == MSG_ACK)
+	--unacked;
+      else
+	diep("unexpected ack");
     }
     
     if (cfg->fname)
       psd_slabs_buf_read_swap(cfg->slab, 0);
+
+    if (pinfo.id == 0xdeadbeef)
+      break;
   }
 
   pthread_exit(NULL);
@@ -549,10 +553,14 @@ void *rdma_write_thread(void *arg) {
       hndl = *(XFER_RDMA_buf_handle*)
 	psd_slabs_buf_get_priv_data(cfg->slab, PSB_CURR);
 
-      if (bytes_left > hndl.local_size)
+      if (bytes_left > hndl.local_size) {
 	send_amt = hndl.local_size;
-      else
+	hndl.id = 0xcafebabe;
+      }
+      else {
 	send_amt = bytes_left;
+	hndl.id = 0xdeadbeef;
+      }
       
       hndl.local_size = send_amt;
       hptr = &hndl;
@@ -561,8 +569,6 @@ void *rdma_write_thread(void *arg) {
       psd_slabs_buf_curr_swap(cfg->slab);
       
       bytes_left -= send_amt;
-
-      //printf("bytes_left: %lu, send_amt: %lu\n", bytes_left, send_amt);
       
       __sync_fetch_and_add(&send_queued, send_amt);
       __sync_fetch_and_add(&total_bytes, send_amt);
@@ -712,7 +718,7 @@ int do_rdma_client(struct xfer_config *cfg) {
     pthread_join(rwthr, NULL);
   }
 
-  pthread_cancel(pthr);
+  pthread_join(pthr, NULL);
 
   msg.type = MSG_STOP;
   n = send(cfg->cntl_sock, &msg, sizeof(struct message), 0);
@@ -742,7 +748,7 @@ int do_rdma_server(struct xfer_config *cfg) {
   struct message msg;
   struct sockaddr_in cliaddr;
   struct timeval start_time, end_time;
-  size_t bytes_recv, to_recv;
+  size_t bytes_recv;
   size_t slab_bytes;
 
   clilen = sizeof(cliaddr);
@@ -763,7 +769,7 @@ int do_rdma_server(struct xfer_config *cfg) {
   n = send(cfg->cntl_sock, &msg, sizeof(struct message), 0);
   if (n <= 0) {
     fprintf(stderr, "RDMA control conn failed\n");
-    diep("recv");
+    diep("send");
   }      
   
   ctx = xfer_rdma_server_connect(&data);
@@ -776,9 +782,9 @@ int do_rdma_server(struct xfer_config *cfg) {
   // get remote slab info
   pdata = data.remote_priv;
   cfg->buflen = pdata->buflen;
+  cfg->bytes = pdata->fsize;
   cfg->slab_order = pdata->slab_order;
   cfg->slab_parts = pdata->slab_parts;
-  to_recv = pdata->fsize;
   
   if (rdma_slab_bufs_reg(cfg))
     return -1;
@@ -815,8 +821,8 @@ int do_rdma_server(struct xfer_config *cfg) {
 
     if (msg.type == MSG_DONE) {
       n = psd_slabs_buf_get_psize(cfg->slab);
-      if ((n + bytes_recv) > to_recv)
-	n = (to_recv - bytes_recv);
+      if ((n + bytes_recv) > cfg->bytes)
+	n = (cfg->bytes - bytes_recv);
 
       if (cfg->fname) {
 	psd_slabs_buf_advance(cfg->slab, n, PSB_WRITE);
@@ -828,6 +834,10 @@ int do_rdma_server(struct xfer_config *cfg) {
     }
   }
 
+  // signal file write thread with 0-sized slab to stop
+  psd_slabs_buf_write_swap(cfg->slab, 0);
+  pthread_join(wthr, NULL);
+  
   gettimeofday(&end_time, NULL);
   print_bw(&start_time, &end_time, bytes_recv);
 
@@ -852,14 +862,22 @@ int do_socket_client(struct xfer_config *cfg) {
   size_t slab_bytes;
   size_t bytes_sent;
   char *buf;
-
+  
   s = socket_client_connect(cfg, cfg->host);
-
+  
   gettimeofday(&start_time, NULL);
   
-  if (cfg->fname)
+  if (cfg->fname) {
+    struct mdata msg;
+    msg.fsize = cfg->bytes;
+    n = send(s, &msg, sizeof(struct mdata), 0);
+    if (n <= 0) {
+      diep("send");
+    }
+    
     pthread_create(&rthr, NULL, fread_thread, (void*)cfg);
-
+  }
+    
   if (cfg->interval)
     pthread_cond_signal(&report_cond);
   
@@ -952,9 +970,16 @@ int do_socket_server(struct xfer_config *cfg) {
 
     gettimeofday(&start_time, NULL);
 
-    if (cfg->fname)
+    if (cfg->fname) {
+      struct mdata msg;
+      n = recv(s, &msg, sizeof(struct mdata), MSG_WAITALL);
+      if (n < 0) {
+	diep("recv");
+      }
+      cfg->bytes = msg.fsize;
       pthread_create(&wthr, NULL, fwrite_thread, (void*)cfg);
-
+    }
+    
     if (cfg->interval)
       pthread_cond_signal(&report_cond);
 
@@ -984,6 +1009,8 @@ int do_socket_server(struct xfer_config *cfg) {
         bytes_recv += n;
         total_bytes = bytes_recv;
       }
+      // signal write thread to stop
+      psd_slabs_buf_write_swap(cfg->slab, 0);
       pthread_join(wthr, NULL);
     }
     else {
@@ -1268,6 +1295,10 @@ int main(int argc, char **argv) {
   if (cfg.cntl == NULL)
     cfg.cntl = cfg.host;
 
+  // check if we have anything to send/recv at this point
+  if (client && !cfg.bytes)
+    goto exit;
+  
 #ifdef WITH_XSP
   libxspSess *sess;
   libxspSecInfo *sec;
@@ -1329,6 +1360,7 @@ int main(int argc, char **argv) {
       do_socket_server(&cfg);
   }
 
+ exit:
   if (cfg.fname) {
     close(fd);
   }

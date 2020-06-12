@@ -238,6 +238,7 @@ void psd_slabs_buf_read_swap(psdSLAB *slab, int total) {
 void psd_slabs_buf_curr_swap(psdSLAB *slab) {
   pthread_mutex_lock(&(slab->buf_lock));
   {
+    slab->entries[slab->s_index]->status = PSB_NO_ERR;
     slab->s_index++;
     if (slab->s_index > slab->p_count)
       slab->s_index = 0;
