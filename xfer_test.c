@@ -1051,12 +1051,12 @@ static void usage(const char *argv0) {
   printf("  -p <port#>             listen on/connect to control port <port> (default 9930)\n");
   printf("  -q <port#>             RDMA CMA port (default 18515)\n");
   printf("  -l <size [M,G]>        size of message to exchange (default 1MB)\n");
-  printf("  -n <bytes>             number of bytes to exchange\b");
+  printf("  -n <bytes>             number of bytes to transfer (override file size)\n");
   printf("  -i <secs>              update interval in seconds\n");
   printf("  -t <secs>              duration of test in seconds\n");
   printf("  -f <path>              infile (client) | outfile (server)\n");
   printf("  -y <host>              RDMA control channel\n");
-  printf("  -c <host>	           connect to destination host (data channel)\n");
+  printf("  -c <host>              connect to destination host (data channel)\n");
   printf("  -o <num>               SLAB buffer order (2^x)\n");
   printf("  -a <num>               SLAB partitions\n");
   printf("  -x <host/port>         XSP path signaling\n");
