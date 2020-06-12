@@ -1,5 +1,6 @@
 CC=gcc
-CFLAGS += $(XSP_FLAGS) -D_GNU_SOURCE -g -O0
+#DEBUG = -g -O0
+CFLAGS += $(XSP_FLAGS) -D_GNU_SOURCE $(DEBUG)
 BASIC_FILES = get_clock.c slabs_buffer.c
 BASIC_HEADERS = get_clock.h
 
