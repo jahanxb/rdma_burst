@@ -1296,7 +1296,7 @@ int main(int argc, char **argv) {
     cfg.cntl = cfg.host;
 
   // check if we have anything to send/recv at this point
-  if (client && !cfg.bytes)
+  if (client && cfg.fname && !cfg.bytes)
     goto exit;
   
 #ifdef WITH_XSP
