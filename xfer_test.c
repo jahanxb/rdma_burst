@@ -496,7 +496,7 @@ void *rdma_poll_thread(void *arg) {
     __sync_fetch_and_add(&sent, -1);
     __sync_fetch_and_add(&send_queued, -psd_slabs_buf_get_psize(cfg->slab));
 
-    if (++unacked >= psd_slabs_buf_get_pcount(cfg->slab)) {
+    if (cfg->fname && (++unacked >= psd_slabs_buf_get_pcount(cfg->slab))) {
       n = recv(cfg->cntl_sock, &msg, sizeof(struct message), MSG_WAITALL);
       if (n < 0) {
 	fprintf(stderr, "RDMA control channel failed\n");
@@ -507,10 +507,10 @@ void *rdma_poll_thread(void *arg) {
       else
 	diep("unexpected ack");
     }
-    
+
     if (cfg->fname)
       psd_slabs_buf_read_swap(cfg->slab, 0);
-
+    
     if (pinfo.id == 0xdeadbeef)
       break;
   }
@@ -528,9 +528,9 @@ void *rdma_write_thread(void *arg) {
   double dtmp;
 
   clock_gettime(CLOCK_REALTIME, &startup);
-
   bytes_left = cfg->bytes;
-  while (RUN && bytes_left) {
+  
+  while (RUN) {
     if (cfg->bandwidth == 0.0) {
       bytes_allowed = 0xFFFFFFFFFFFFFFFF;
     }
@@ -547,22 +547,29 @@ void *rdma_write_thread(void *arg) {
     if ((sent < cfg->tx_depth) &&
         (total_bytes + send_queued) < bytes_allowed) {
 
-      // wait for the next available buffer to send
-      psd_slabs_buf_wait_curr(cfg->slab, PSB_READ);
+      // wait for the next available buffer to send when necessary
+      if (cfg->fname)
+	psd_slabs_buf_wait_curr(cfg->slab, PSB_READ);
 
       hndl = *(XFER_RDMA_buf_handle*)
 	psd_slabs_buf_get_priv_data(cfg->slab, PSB_CURR);
 
-      if (bytes_left > hndl.local_size) {
-	send_amt = hndl.local_size;
-	hndl.id = 0xcafebabe;
+      // adjust send amount only for file alignment
+      if (cfg->fname) {
+	if (bytes_left > hndl.local_size) {
+	  send_amt = hndl.local_size;
+	  hndl.id = 0xcafebabe;
+	}
+	else {
+	  send_amt = bytes_left;
+	  hndl.id = 0xdeadbeef;
+	}
+	hndl.local_size = send_amt;
       }
       else {
-	send_amt = bytes_left;
-	hndl.id = 0xdeadbeef;
+	send_amt = hndl.local_size;
       }
       
-      hndl.local_size = send_amt;
       hptr = &hndl;
       xfer_rdma_post_os_put(&hptr, 1);
       
@@ -573,6 +580,10 @@ void *rdma_write_thread(void *arg) {
       __sync_fetch_and_add(&send_queued, send_amt);
       __sync_fetch_and_add(&total_bytes, send_amt);
       __sync_fetch_and_add(&sent, 1);
+
+      // stop cleanly when transfering files
+      if (cfg->fname && !bytes_left)
+	break;
     }
     else {
       usleep(100);
