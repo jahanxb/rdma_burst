@@ -48,7 +48,7 @@ psdSLAB *psd_slabs_buf_create(size_t size, int partitions) {
   buf->size = buf->p_size * partitions;
   buf->p_count = partitions - 1;
   buf->total_count_bytes = 0;
-  buf->r_index = buf->p_count;
+  buf->r_index = 0;
   buf->s_index = 0;
   buf->w_index = 0;
 
@@ -316,7 +316,7 @@ uint64_t psd_slabs_buf_count_bytes_free(psdSLAB *slab, int side) {
   if (side == PSB_WRITE)
     return slab->entries[ind]->size - slab->entries[ind]->write_amount;
   else if ((side == PSB_READ) || (side == PSB_CURR)) {
-    return slab->entries[ind]->write_amount - slab->entries[ind]->read_amount;
+    return slab->entries[ind]->size - slab->entries[ind]->read_amount;
   }
 
   return 0;

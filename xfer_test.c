@@ -230,7 +230,7 @@ char* print_bytes(double b, int bits) {
 
 void print_bw(struct timeval *s, struct timeval *e, size_t b) {
   double rate = (double)b/difftv(s, e);
-  printf("[0.0-%.1f sec]\t%14s\t%14s/s\tbytes: %llu\n", difftv(s, e),
+  printf("[0.0-%.1f sec]\t%14s\t%14s/s\tbytes: %lu\n", difftv(s, e),
          print_bytes(b, 0), print_bytes(rate, 1), b);
 }
 
@@ -508,11 +508,11 @@ void *rdma_poll_thread(void *arg) {
 	diep("unexpected ack");
     }
 
-    if (cfg->fname)
-      psd_slabs_buf_read_swap(cfg->slab, 0);
-    
     if (pinfo.id == 0xdeadbeef)
       break;
+
+    if (cfg->fname)
+      psd_slabs_buf_read_swap(cfg->slab, 0);
   }
 
   pthread_exit(NULL);
@@ -759,7 +759,7 @@ int do_rdma_server(struct xfer_config *cfg) {
   struct message msg;
   struct sockaddr_in cliaddr;
   struct timeval start_time, end_time;
-  size_t bytes_recv;
+  size_t bytes_recv = 0;
   size_t slab_bytes;
 
   clilen = sizeof(cliaddr);
@@ -1252,7 +1252,7 @@ int main(int argc, char **argv) {
     }
   }
 
-  printf("Using a SLaBS buffer of size %lu with %d partitions of size %lu\n",
+  printf("Using a SLaBS buffer of size %u with %d partitions of size %u\n",
          (unsigned)floor(cfg.buflen/cfg.slab_parts)*cfg.slab_parts,
          cfg.slab_parts,
          (unsigned)floor(cfg.buflen/cfg.slab_parts));
@@ -1271,7 +1271,7 @@ int main(int argc, char **argv) {
 #endif
   }
 
-  if (cfg.time)
+  if (cfg.time && !cfg.fname)
     pthread_create(&tthr, NULL, time_thread, &cfg.time);
 
   if (cfg.fname) {
