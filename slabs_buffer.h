@@ -53,7 +53,7 @@ extern pthread_mutex_t buf_total_lock;
 extern pthread_cond_t buf_total_cond;
 extern uint64_t PSD_SLAB_SIZE;
 
-psdSLAB *psd_slabs_buf_create(size_t size, int partitions);
+psdSLAB *psd_slabs_buf_create(size_t size, int partitions, int read_zero);
 void psd_slabs_buf_free(psdSLAB *slab);
 void psd_slabs_buf_reset(psdSLAB *slab);
 

@@ -359,7 +359,7 @@ int rdma_slab_bufs_reg(struct xfer_config *cfg, struct xfer_context *ctx) {
   int i;
 
   // slab buf
-  cfg->slab = psd_slabs_buf_create(cfg->slab_order, cfg->slab_parts);
+  cfg->slab = psd_slabs_buf_create(cfg->slab_order, cfg->slab_parts, 1);
   if (!cfg->slab) {
     fprintf(stderr, "could not allocate SLAB buffer\n");
     return -1;

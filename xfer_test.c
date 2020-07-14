@@ -88,6 +88,7 @@ struct mdata {
 };
 
 struct xfer_config {
+  int server;
   int fd;
   int cntl_sock;
   int pipe[2];
@@ -381,11 +382,6 @@ void *fwrite_thread(void *arg) {
       psd_slabs_buf_read_swap(cfg->slab, 0);
       slab_bytes = psd_slabs_buf_count_bytes_free(cfg->slab, PSB_READ);
 
-      if (slab_bytes < page_size)
-	write_bytes = page_size;
-      else
-	write_bytes = slab_bytes;
-      
       if (cfg->use_rdma) {
 	// send ACK
 	struct message msg;
@@ -402,6 +398,13 @@ void *fwrite_thread(void *arg) {
     if (slab_bytes == 0) {
       break;
     }
+    
+    // otherwise, determine how much to actually write
+    if (slab_bytes < page_size)
+      write_bytes = page_size;
+    else
+      write_bytes = slab_bytes;
+
     slab_buf_addr = psd_slabs_buf_addr(cfg->slab, PSB_READ);
 
     if (cfg->use_splice) {
@@ -483,7 +486,7 @@ void *rdma_poll_thread(void *arg) {
   struct message msg;
   int n, unacked = 0;
   
-  while (1) {
+  while (RUN) {
     xfer_rdma_wait_os_event(cfg->ctx, &pinfo);
 
     msg.type = MSG_DONE;
@@ -610,7 +613,10 @@ int rdma_slab_bufs_reg(struct xfer_config *cfg) {
   int i;
 
   // slab buf
-  cfg->slab = psd_slabs_buf_create(cfg->buflen, cfg->slab_parts);
+  if (cfg->server)
+    cfg->slab = psd_slabs_buf_create(cfg->buflen, cfg->slab_parts, 0);
+  else
+    cfg->slab = psd_slabs_buf_create(cfg->buflen, cfg->slab_parts, 1);
   if (!cfg->slab) {
     fprintf(stderr, "could not allocate SLAB buffer\n");
     return -1;
@@ -832,14 +838,14 @@ int do_rdma_server(struct xfer_config *cfg) {
 
     if (msg.type == MSG_DONE) {
       n = psd_slabs_buf_get_psize(cfg->slab);
-      if ((n + bytes_recv) > cfg->bytes)
+      if (cfg->bytes && ((n + bytes_recv) > cfg->bytes))
 	n = (cfg->bytes - bytes_recv);
 
       if (cfg->fname) {
 	psd_slabs_buf_advance(cfg->slab, n, PSB_WRITE);
 	psd_slabs_buf_write_swap(cfg->slab, 0);
       }
-
+      
       bytes_recv += n;
       total_bytes = bytes_recv;
     }
@@ -847,10 +853,12 @@ int do_rdma_server(struct xfer_config *cfg) {
 
   // signal file write thread with 0-sized slab to stop
   psd_slabs_buf_write_swap(cfg->slab, 0);
-  pthread_join(wthr, NULL);
+  if (cfg->fname) {
+    pthread_join(wthr, NULL);
+  }
   
   gettimeofday(&end_time, NULL);
-  print_bw(&start_time, &end_time, bytes_recv);
+  print_bw(&start_time, &end_time, total_bytes);
 
   rdma_slab_bufs_unreg(cfg);
   xfer_rdma_finalize(&data);
@@ -1087,8 +1095,9 @@ int main(int argc, char **argv) {
   }
   
   page_size = sysconf(_SC_PAGESIZE);
-  
+
   struct xfer_config cfg  = {
+    .server = 0,
     .cntl = NULL,
     .host = "127.0.0.1",
     .fname = NULL,
@@ -1114,7 +1123,6 @@ int main(int argc, char **argv) {
 
   int fd = -1;
   int c;
-  int client = 1;
   int len;
   unsigned mult = 1;
 
@@ -1157,7 +1165,7 @@ int main(int argc, char **argv) {
       cfg.use_splice = 1;
       break;
     case 's':
-      client = 0;
+      cfg.server = 1;
       break;
     case 'c':
       cfg.host = strdup(optarg);
@@ -1172,7 +1180,7 @@ int main(int argc, char **argv) {
       cfg.use_rdma = 1;
       break;
     case 'i':
-      cfg.interval = atoi(optarg);
+     cfg.interval = atoi(optarg);
       break;
     case 't':
       cfg.time = atoi(optarg);
@@ -1245,7 +1253,10 @@ int main(int argc, char **argv) {
     cfg.buflen = (1UL << cfg.slab_order);
 
   if (!cfg.use_rdma) {
-    cfg.slab = psd_slabs_buf_create(cfg.buflen, cfg.slab_parts);
+    if (cfg.server)
+      cfg.slab = psd_slabs_buf_create(cfg.buflen, cfg.slab_parts, 0);
+    else
+      cfg.slab = psd_slabs_buf_create(cfg.buflen, cfg.slab_parts, 1);
     if (!cfg.slab) {
       fprintf(stderr, "could not allocate SLAB buffer\n");
       return -1;
@@ -1279,7 +1290,7 @@ int main(int argc, char **argv) {
     struct stat stat_buf;
     size_t fsize;
 
-    if (client) {
+    if (!cfg.server) {
       fd = open(cfg.fname, O_RDONLY | O_DIRECT);
       mmap_flags = PROT_READ | PROT_WRITE;
     }
@@ -1293,7 +1304,7 @@ int main(int argc, char **argv) {
       return -1;
     }
 
-    if (client) {
+    if (!cfg.server) {
       fstat(fd, &stat_buf);
       fsize = stat_buf.st_size;
       if (!cfg.bytes)
@@ -1307,7 +1318,7 @@ int main(int argc, char **argv) {
     cfg.cntl = cfg.host;
 
   // check if we have anything to send/recv at this point
-  if (client && cfg.fname && !cfg.bytes)
+  if (!cfg.server && cfg.fname && !cfg.bytes)
     goto exit;
   
 #ifdef WITH_XSP
@@ -1351,7 +1362,7 @@ int main(int argc, char **argv) {
   }
 #endif
 
-  if (client) {
+  if (!cfg.server) {
     signal(SIGINT, do_stop);
 #ifdef HAVE_RDMA
     if (cfg.use_rdma)
