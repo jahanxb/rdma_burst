@@ -671,6 +671,7 @@ int do_rdma_client(struct xfer_config *cfg) {
   data.servername = cfg->host;
   data.local_priv = &pdata;
   data.local_priv_size = sizeof(struct mdata);
+  data.tx_depth = cfg->tx_depth;
 
   if (xfer_rdma_init(&data)) {
     return -1;
