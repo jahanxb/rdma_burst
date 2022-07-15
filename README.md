@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### xfer_test network throughput tool
 
 ##### RDMA example usage:
@@ -33,3 +34,7 @@ Metadata exchange complete
 [0.0-95.6 sec]	    1048.58 GB	      87.77 Gb/s	bytes: 1048576000000
 ```
 
+=======
+# rdma_burst
+rdma private repo (code modified from https://github.com/disprosium8/xfer_test)
+>>>>>>> 03a85d9f25728a5bc50e1cca49caa454b9cf3dbd
