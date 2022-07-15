@@ -126,7 +126,8 @@ void psd_slabs_buf_free(psdSLAB *slab) {
 }
 
 void psd_slabs_buf_reset(psdSLAB *slab) {
-
+    // j->k-.s
+    //_pthread_cleanup_buffer(slab->buf_lock);
 }
 
 void psd_slabs_buf_wait_curr(psdSLAB *slab, int side) {

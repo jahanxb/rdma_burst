@@ -784,7 +784,7 @@ int xfer_rdma_init(struct xfer_data *data) {
          */
   pid = getpid();
 
-  printf("%d: | port=%d | ib_port=%d | tx_depth=%d | sl=%d | duplex=%d | cma=%d |\n",
+  printf("%d: testing| port=%d | ib_port=%d | tx_depth=%d | sl=%d | duplex=%d | cma=%d |\n",
          pid, data->port, data->ib_port, data->tx_depth, sl, duplex, data->use_cma);
 
   srand48(pid * time(NULL));

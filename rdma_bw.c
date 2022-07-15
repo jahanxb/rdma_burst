@@ -1043,7 +1043,7 @@ int main(int argc, char *argv[]) {
    */
   pid = getpid();
 
-  printf("%d: | port=%d | ib_port=%d | size=%d | tx_depth=%d | sl=%d | iters=%d | duplex=%d | cma=%d |\n",
+  printf("%d: testing | port=%d | ib_port=%d | size=%d | tx_depth=%d | sl=%d | iters=%d | duplex=%d | cma=%d |\n",
          pid, data.port, data.ib_port, data.size, data.tx_depth,
          sl, iters, duplex, data.use_cma);
 
