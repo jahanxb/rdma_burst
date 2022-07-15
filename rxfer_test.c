@@ -1740,7 +1740,7 @@ int validator = 0;
                   }
                   cfg.fd = fd;
 
-
+ 
             
 
             // fd = open(cfg.fname, O_RDWR | O_CREAT | O_TRUNC | O_DIRECT, S_IRUSR | S_IWUSR);
