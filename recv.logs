@@ -1,0 +1,73 @@
+Using a SLaBS buffer of size 16777216 with 4 partitions of size 4194304
+server: /proj/anomaly-PG0/received_data/rc 
+
+ RDMA Server: 
+Waiting for RDMA control conn...[connection from: 10.0.0.51]
+29665: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ sizeof struct message 72 
+Created SLAB buffer with SIZE: 16777212 PARTITIONS: 6
+Metadata exchange complete
+[0.0-0.4 sec]	      10.49 MB	     203.05 Mb/s	bytes: 10485760
+
+ looper value changed to what: 5 
+Using a SLaBS buffer of size 16777212 with 6 partitions of size 2796202
+server: /proj/anomaly-PG0/received_data/rc0 
+
+ RDMA Server: 
+
+ Connection is already establised , Use same netconfig 
+ Waiting for RDMA control conn...[connection from: 10.0.0.51]
+29665: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ sizeof struct message 72 
+Created SLAB buffer with SIZE: 16777212 PARTITIONS: 6
+Metadata exchange complete
+[0.0-0.4 sec]	      10.49 MB	     229.52 Mb/s	bytes: 10485760
+
+ looper value changed to what: 5 
+Using a SLaBS buffer of size 16777212 with 6 partitions of size 2796202
+server: /proj/anomaly-PG0/received_data/rc01 
+
+ RDMA Server: 
+
+ Connection is already establised , Use same netconfig 
+ Waiting for RDMA control conn...[connection from: 10.0.0.51]
+29665: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ sizeof struct message 72 
+Created SLAB buffer with SIZE: 16777212 PARTITIONS: 6
+Metadata exchange complete
+[0.0-0.4 sec]	      10.49 MB	     215.21 Mb/s	bytes: 10485760
+
+ looper value changed to what: 5 
+Using a SLaBS buffer of size 16777212 with 6 partitions of size 2796202
+server: /proj/anomaly-PG0/received_data/rc012 
+
+ RDMA Server: 
+
+ Connection is already establised , Use same netconfig 
+ Waiting for RDMA control conn...[connection from: 10.0.0.51]
+29665: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ sizeof struct message 72 
+Created SLAB buffer with SIZE: 16777212 PARTITIONS: 6
+Metadata exchange complete
+[0.0-0.4 sec]	      10.49 MB	     216.54 Mb/s	bytes: 10485760
+
+ looper value changed to what: 5 
+Using a SLaBS buffer of size 16777212 with 6 partitions of size 2796202
+server: /proj/anomaly-PG0/received_data/rc0123 
+
+ RDMA Server: 
+
+ Connection is already establised , Use same netconfig 
+ Waiting for RDMA control conn...[connection from: 10.0.0.51]
+29665: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ sizeof struct message 72 
+Created SLAB buffer with SIZE: 16777212 PARTITIONS: 6
+Metadata exchange complete
+[0.0-0.4 sec]	      10.49 MB	     225.60 Mb/s	bytes: 10485760
+
+ looper value changed to what: 5 

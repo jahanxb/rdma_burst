@@ -22,9 +22,6 @@
 #include <dirent.h>
 
 
-// #ifdef WITH_XSP
-// #include "libxsp_client.h"
-// #endif
 
 #ifdef HAVE_RDMA
 #include "xfer_rdma.h"
@@ -61,13 +58,14 @@ struct xfer_data data = {
   .local_priv       = NULL,
   .local_priv_size  = 0,
   .remote_priv      = NULL,
-  .remote_priv_size = 0
+  .remote_priv_size = 0,
+  
 };
+int numo=0;
+int explore_dir(char *);
 
-void explore_dir(char *);
-
-void explore_dir(char *foldername) {
-    
+int explore_dir(char *foldername) {
+    int count=0;
     DIR *d;
     char *pathdir;
     struct dirent *dir;
@@ -81,16 +79,19 @@ void explore_dir(char *foldername) {
         {
             //Condition to check regular file.
             if(dir->d_type==DT_REG){
-                full_path[0]='\0';
-                strcat(full_path,path);
-                strcat(full_path,"/");
-                strcat(full_path,dir->d_name);
-                printf("%s\n",full_path);
+              ++count;
+              
+                //full_path[0]='\0';
+                // strcat(full_path,path);
+                // strcat(full_path,"/");
+                // strcat(full_path,dir->d_name);
+                //printf("%s\n",full_path);
             }
+            
         }
         closedir(d);
     }
-    
+    return count;
     
 }
 
@@ -116,6 +117,7 @@ struct mdata {
   size_t fsize;
   uint32_t slab_order;
   uint32_t slab_parts;
+  
 };
 
 struct xfer_config {
@@ -147,6 +149,7 @@ struct xfer_config {
   int use_splice;
   int use_rdma;
   int affinity;
+  int num_files;
 };
 
 
@@ -184,8 +187,33 @@ size_t fsize;
     .ctx = NULL,
     .use_splice = 0,
     .use_rdma = 0,
-    .affinity = -1
+    .affinity = -1,
+    .num_files = 1
   };
+
+
+
+
+char *randstring(size_t length) {
+
+    static char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";        
+    char *randomString = NULL;
+
+    if (length) {
+        randomString = malloc(sizeof(char) * (length +1));
+
+        if (randomString) {            
+            for (int n = 0;n < length;n++) {            
+                int key = rand() % (int)(sizeof(charset) -1);
+                randomString[n] = charset[key];
+            }
+
+            randomString[length] = '\0';
+        }
+    }
+    
+    return randomString;
+}
 
 
 
@@ -231,6 +259,7 @@ int socket_client_connect(struct xfer_config *cfg, char *host) {
     diep("connect");
 
   cfg->cntl_sock = s;
+  printf("\n inside socket : %d \n",s);
 
   return s;
 }
@@ -747,7 +776,8 @@ int do_rdma_client(struct xfer_config *cfg) {
   data.local_priv = &pdata;
   data.local_priv_size = sizeof(struct mdata);
   data.tx_depth = cfg->tx_depth;
-
+  
+  printf("\n data.dbdirnum : \n");
   if (xfer_rdma_init(&data)) {
     return -1;
   }
@@ -880,6 +910,7 @@ int do_rdma_server(struct xfer_config *cfg) {
   cfg->bytes = pdata->fsize;
   cfg->slab_order = pdata->slab_order;
   cfg->slab_parts = pdata->slab_parts;
+ 
   
   if (rdma_slab_bufs_reg(cfg))
     return -1;
@@ -1172,6 +1203,17 @@ static void usage(const char *argv0) {
   printf("  -ff                     Files in folder (client) \n");
 }
 
+//
+
+
+
+
+//
+
+
+
+
+
 int main(int argc, char **argv) {
   if (argc < 2) {
     usage(argv[0]);
@@ -1179,6 +1221,7 @@ int main(int argc, char **argv) {
   }
   
   page_size = sysconf(_SC_PAGESIZE);
+
 
 
 
@@ -1274,13 +1317,19 @@ int main(int argc, char **argv) {
       exit(-1);
     }
   }
+  int count = 0;
   if (cfg.fname) {
     if(!cfg.server){
-        //explore_dir(cfg.fname);
-        // char fullpath[1000];
-        // strcpy(fullpath,explore_dir(cfg.fname));
-        // printf("fullpath %s",fullpath);
- 
+    
+    
+    numo = explore_dir(cfg.fname);
+    printf("\n Total no. of files : %d \n",numo);
+    
+    
+    
+    cfg.num_files = numo;
+    
+
       DIR *d;
       char *pathdir;
       struct dirent *dir;
@@ -1430,7 +1479,7 @@ int main(int argc, char **argv) {
           // closedir(d);
       
       /******************/
-      printf("\n a b repeat \n");
+     
 
        if (cfg.cntl == NULL) {
     cfg.cntl = cfg.host;
@@ -1439,6 +1488,7 @@ int main(int argc, char **argv) {
   // check if we have anything to send/recv at this point
   if (!cfg.server && cfg.fname && !cfg.bytes) {
     //printf("\n After sending first file , i am here  \n");
+  
     goto exitc;
   }
   //printf("\n a b repeat \n");
@@ -1461,7 +1511,8 @@ int main(int argc, char **argv) {
     .buflen = cfg.buflen,
     .fsize = cfg.bytes,
     .slab_order = cfg.slab_order,
-    .slab_parts = cfg.slab_parts
+    .slab_parts = cfg.slab_parts,
+
   };
   // pass
   // connect RDMA control conn
@@ -1506,10 +1557,19 @@ int main(int argc, char **argv) {
     printf("raddr: %p, laddr: %p, size: %lu\n", hptr->remote_mr->addr,
            hptr->local_mr->addr, hptr->local_size);
     psd_slabs_buf_curr_swap(cfg.slab);
+
+    //rdma_slab_bufs_unreg(&cfg);
+  //xfer_rdma_finalize(&data);
   } 
 
   printf("Metadata exchange complete\n");
 
+  count = count + 1;
+  
+  // if(count==100 || count==200 || count==300||count==400||count==500) {
+  //   printf("\n Snooze Client after 100th file processed\n");
+  //   sleep(10);
+  // }
   // init some variables
   total_bytes = 0;
   sent = 0;
@@ -1560,7 +1620,20 @@ int main(int argc, char **argv) {
 }
 
  exitc:
+//  if (count==337) {
+//   usleep(100);
+//   usleep(10);
+//  }
   if (cfg.fname) {
+    printf("\n inside exitc \n");
+
+    close(cfg.cntl_sock);
+    psd_slabs_buf_free(cfg.slab);
+    psd_slabs_buf_reset(cfg.slab);
+    //closedir(d);
+    
+    //rdma_slab_bufs_unreg(&cfg);
+  //xfer_rdma_finalize(&data);
     close(fd);
   }
 
@@ -1583,6 +1656,7 @@ int main(int argc, char **argv) {
       
       
       } // end of if-condition
+            
             }
       
       closedir(d);
@@ -1594,45 +1668,35 @@ int main(int argc, char **argv) {
     
   else 
   {
-              /*
-              char foldername[1000];
-              char newfoldername[1000];
-              for (int i=0;i<=3;i++){
-                  //int mmap_flags;
-                  
-                  foldername[0] = '\0';
-                  newfoldername[0] = '\0';
-                  
-                  printf("server: %s \n",cfg.fname);
-                  snprintf(foldername, 12, "recv_%d_file", i); // puts string into buffer
-                  strcat(newfoldername,"//");
-                  strcat(newfoldername,foldername);
-                  strcat(cfg.fname,foldername);
-                  //printf("\n filename: %s\n", cfg.fname); 
-                  
-                  // FILE *fp;
-                  // fp  = fopen(cfg.fname, "w");
-                  // fclose(fp);
-                  
-                  
-                  fd = open(cfg.fname, O_RDWR | O_CREAT | O_TRUNC | O_DIRECT, S_IRUSR | S_IWUSR);
-                  mmap_flags = PROT_READ | PROT_WRITE;
-                  foldername[0]= '\0';
-                  newfoldername[0]= '\0';
-                  if (fd < 0) {
-                    fprintf(stderr, "could not open file\n");
-                    return -1;
-                  }
-                  cfg.fd = fd;
-                  
-              }
-            */
+  
+  /***********
+   * RDMA Initial connection Manager to set how many files is Server gonna receive from Client.
+   *  int looper will store the value and loop will run and create files 
+   ***********/ 
+
+  /********
+   * End of Looper
+   * 
+   *******/
 
 
+
+
+int looper = 5;
 
 int validator = 0;
 
- for (int i=0;i<5;i++) {
+char exppath[1000];
+char newfoldername[1000] = {0};
+
+strcpy(exppath,cfg.fname);
+printf("\n exppath : %s \n",exppath);
+//char exppath[1000] = "0";
+
+
+
+ for (int i=0;i<1001;i++) {
+  
 #ifndef HAVE_RDMA
   if (cfg.use_rdma) {
     fprintf(stderr, "Please compile with RDMA support.\n");
@@ -1706,41 +1770,57 @@ int validator = 0;
 #endif
   }
 
+printf("\n File being Processed: %d \n",i);
   if (cfg.time && !cfg.fname)
     pthread_create(&tthr, NULL, time_thread, &cfg.time);
 
-
-
-            /******************/
-            
-
-              char foldername[1000];
-              char newfoldername[1000];
+              char foldername[1000] = {0};
+              strcpy(foldername,newfoldername);
+              int mmap_flags;
+              char intstring[1000];
+                  // foldername[0] = '\0';
+                  // newfoldername[0] = '\0';
+                  // *foldername = '\0';
+                  // *newfoldername = '\0';
               
-                  //int mmap_flags;
+              //strcpy(foldername,randstring(32));
+
+              //snprintf(intstring, 1200, "%d", i); 
+              strcpy(foldername,randstring(32));
+              if(i==0){
+              strcat(cfg.fname,foldername);
+              }
+              else {
+                strcpy(cfg.fname,exppath);
+                strcat(cfg.fname,foldername);
+              }
                   
-                  foldername[0] = '\0';
-                  newfoldername[0] = '\0';
-                  *foldername = '\0';
-                  *newfoldername = '\0';
-                  
-                  printf("server: %s \n",cfg.fname);
-                  snprintf(foldername, 12, "%d", i); // puts string into buffer
+                  //printf("server: %s \n",cfg.fname);
+                   // puts string into buffer
                   //strcpy(newfoldername,"//");
-                  strcat(newfoldername,foldername);
-                  strcat(cfg.fname,foldername);
+                  //strcat(newfoldername,foldername);
+                  //strcat(cfg.fname,foldername);
                   
                   fd = open(cfg.fname, O_RDWR | O_CREAT | O_TRUNC | O_DIRECT, S_IRUSR | S_IWUSR);
                   mmap_flags = PROT_READ | PROT_WRITE;
-                  foldername[0]= '\0';
-                  newfoldername[0]= '\0';
+                  
+                  //foldername[0]= '\0';
+                  strcpy(foldername,newfoldername);
+                  //newfoldername[0]= '\0';
+
+
                   if (fd < 0) {
                     fprintf(stderr, "could not open file\n");
                     return -1;
                   }
                   cfg.fd = fd;
+                  
 
- 
+                  // here you can copy the original cfg.fname path after process being done 
+                  
+                 
+                 
+                  
             
 
             // fd = open(cfg.fname, O_RDWR | O_CREAT | O_TRUNC | O_DIRECT, S_IRUSR | S_IWUSR);
@@ -1889,10 +1969,17 @@ int validator = 0;
   n = recv(cfg.cntl_sock, &msg, sizeof(struct message), 0);
   
   //close(cfg.cntl_sock);
-
+  printf("\n looper value changed to what: %d \n",looper);
  exit:
   if (cfg.fname) {
+
     close(fd);
+    printf("\n inside server cfg.fname \n");
+
+    psd_slabs_buf_free(cfg.slab);
+    psd_slabs_buf_reset(cfg.slab);
+    //psd_slabs_buf_free(cfg.slab);
+    //psd_slabs_buf_reset(cfg.slab);
   }
 
   if (cfg.interval)
@@ -1916,5 +2003,4 @@ int validator = 0;
 
 }
 
- 
  

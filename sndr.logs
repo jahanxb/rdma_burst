@@ -1,0 +1,117 @@
+
+ Total no. of files : 916 
+Using a SLaBS buffer of size 16777212 with 6 partitions of size 2796202
+
+ inside condition 
+/proj/anomaly-PG0/10MB1000/mbfile_414.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ a b repeat 
+11770: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+Created SLAB buffer with SIZE: 16777212 PARTITIONS: 6
+
+ before slab exchange pointer the file : /proj/anomaly-PG0/10MB1000/mbfile_414.bin 
+raddr: 0x7fca38618000, laddr: 0x7f8358ed3000, size: 2796202
+raddr: 0x7fca3836c000, laddr: 0x7f8358c27000, size: 2796202
+raddr: 0x7fca380c0000, laddr: 0x7f835897b000, size: 2796202
+raddr: 0x7fca37e14000, laddr: 0x7f83586cf000, size: 2796202
+raddr: 0x7fca37b68000, laddr: 0x7f8358423000, size: 2796202
+raddr: 0x7fca378bc000, laddr: 0x7f8358177000, size: 2796202
+Metadata exchange complete
+[0.0-0.4 sec]	      10.49 MB	     231.64 Mb/s	bytes: 10485760
+Using a SLaBS buffer of size 16777212 with 6 partitions of size 2796202
+
+ inside condition 
+/proj/anomaly-PG0/10MB1000/mbfile_866.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ a b repeat 
+11770: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+Created SLAB buffer with SIZE: 16777212 PARTITIONS: 6
+
+ before slab exchange pointer the file : /proj/anomaly-PG0/10MB1000/mbfile_866.bin 
+raddr: 0x7fca36bf9000, laddr: 0x7f83564b2000, size: 2796202
+raddr: 0x7fca3694d000, laddr: 0x7f8356206000, size: 2796202
+raddr: 0x7fca366a1000, laddr: 0x7f8355f5a000, size: 2796202
+raddr: 0x7fca363f5000, laddr: 0x7f8355cae000, size: 2796202
+raddr: 0x7fca36149000, laddr: 0x7f8355a02000, size: 2796202
+raddr: 0x7fca35e9d000, laddr: 0x7f8355756000, size: 2796202
+Metadata exchange complete
+[0.0-0.3 sec]	      10.49 MB	     266.63 Mb/s	bytes: 10485760
+Using a SLaBS buffer of size 16777212 with 6 partitions of size 2796202
+
+ inside condition 
+/proj/anomaly-PG0/10MB1000/mbfile_362.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ a b repeat 
+11770: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+Created SLAB buffer with SIZE: 16777212 PARTITIONS: 6
+
+ before slab exchange pointer the file : /proj/anomaly-PG0/10MB1000/mbfile_362.bin 
+raddr: 0x7fca35bf1000, laddr: 0x7f8354ca9000, size: 2796202
+raddr: 0x7fca35945000, laddr: 0x7f83549fd000, size: 2796202
+raddr: 0x7fca35699000, laddr: 0x7f8354751000, size: 2796202
+raddr: 0x7fca353ed000, laddr: 0x7f83544a5000, size: 2796202
+raddr: 0x7fca35141000, laddr: 0x7f83541f9000, size: 2796202
+raddr: 0x7fca34e95000, laddr: 0x7f834fd55000, size: 2796202
+Metadata exchange complete
+[0.0-0.3 sec]	      10.49 MB	     246.38 Mb/s	bytes: 10485760
+Using a SLaBS buffer of size 16777212 with 6 partitions of size 2796202
+
+ inside condition 
+/proj/anomaly-PG0/10MB1000/mbfile_66.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ a b repeat 
+11770: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+Created SLAB buffer with SIZE: 16777212 PARTITIONS: 6
+
+ before slab exchange pointer the file : /proj/anomaly-PG0/10MB1000/mbfile_66.bin 
+raddr: 0x7fca34be9000, laddr: 0x7f834f2a8000, size: 2796202
+raddr: 0x7fca3493d000, laddr: 0x7f834effc000, size: 2796202
+raddr: 0x7fca34691000, laddr: 0x7f834ed50000, size: 2796202
+raddr: 0x7fca343e5000, laddr: 0x7f834eaa4000, size: 2796202
+raddr: 0x7fca34139000, laddr: 0x7f834e7f8000, size: 2796202
+raddr: 0x7fca2fd55000, laddr: 0x7f834e54c000, size: 2796202
+Metadata exchange complete
+[0.0-0.3 sec]	      10.49 MB	     249.79 Mb/s	bytes: 10485760
+Using a SLaBS buffer of size 16777212 with 6 partitions of size 2796202
+
+ inside condition 
+/proj/anomaly-PG0/10MB1000/mbfile_703.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ a b repeat 
+11770: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+Created SLAB buffer with SIZE: 16777212 PARTITIONS: 6
+
+ before slab exchange pointer the file : /proj/anomaly-PG0/10MB1000/mbfile_703.bin 
+raddr: 0x7fca2faa9000, laddr: 0x7f834da9f000, size: 2796202
+raddr: 0x7fca2f7fd000, laddr: 0x7f834d7f3000, size: 2796202
+raddr: 0x7fca2f551000, laddr: 0x7f834d547000, size: 2796202
+raddr: 0x7fca2f2a5000, laddr: 0x7f834d29b000, size: 2796202
+raddr: 0x7fca2eff9000, laddr: 0x7f834cfef000, size: 2796202
+raddr: 0x7fca2ed4d000, laddr: 0x7f834cd43000, size: 2796202
+Metadata exchange complete
+[0.0-0.3 sec]	      10.49 MB	     261.13 Mb/s	bytes: 10485760
+Using a SLaBS buffer of size 16777212 with 6 partitions of size 2796202
+
+ inside condition 
+/proj/anomaly-PG0/10MB1000/mbfile_468.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ a b repeat 
+11770: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |

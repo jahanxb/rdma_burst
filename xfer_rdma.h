@@ -58,6 +58,7 @@ struct xfer_data {
   void                            *remote_priv;
   uint64_t                        local_priv_size;
   uint64_t                        remote_priv_size;
+  
 };
 
 typedef struct xfer_rdma_buf_handle_t {
