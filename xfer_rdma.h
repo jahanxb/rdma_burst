@@ -33,6 +33,16 @@ struct xfer_context {
   struct ibv_send_wr  wr;
 };
 
+
+struct jazzy_context {
+  struct ibv_context *ctx;
+  struct ibv_pd *pd;
+  struct ibv_cq *cq;
+  struct ibv_comp_channel *comp_channel;
+
+  pthread_t cq_poller_thread;
+};
+
 // might need this again in the future
 // for non CMA
 struct xfer_dest {
