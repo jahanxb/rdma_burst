@@ -316,14 +316,16 @@ struct xfer_context *xfer_rdma_client_connect(struct xfer_data *data) {
     goto err4;
 
   n = getaddrinfo(data->servername, service, &hints, &res);
-
+  
   if (n < 0) {
     fprintf(stderr, "%d:%s: %s for %s:%d\n",
             pid, __func__, gai_strerror(n),
             data->servername, data->port);
     goto err4;
   }
-
+  printf("\n inside xfer_rdma_client_connect data->port : %d | data->servername : %s \n",
+  data->port,data->servername);
+  
   if (data->use_cma) {
     sin.sin_addr.s_addr = ((struct sockaddr_in*)res->ai_addr)->sin_addr.s_addr;
     sin.sin_family = AF_INET;
@@ -347,8 +349,10 @@ retry_addr:
     }
 
     if (event->event != RDMA_CM_EVENT_ADDR_RESOLVED) {
+      
       fprintf(stderr, "%d:%s: unexpected CM event %d\n",
               pid, __func__, event->event);
+
       goto err2;
     }
     rdma_ack_cm_event(event);
@@ -370,6 +374,7 @@ retry_route:
     }
 
     if (event->event != RDMA_CM_EVENT_ROUTE_RESOLVED) {
+      
       fprintf(stderr, "%d:%s: unexpected CM event %d\n",
               pid, __func__, event->event);
       rdma_ack_cm_event(event);
@@ -399,6 +404,7 @@ retry_route:
       goto err2;
 
     if (event->event != RDMA_CM_EVENT_ESTABLISHED) {
+      printf("\n we are here from client side [3]\n ");
       fprintf(stderr, "%d:%s: unexpected CM event %d\n",
               pid, __func__, event->event);
       goto err1;
@@ -804,6 +810,7 @@ int xfer_rdma_init(struct xfer_data *data) {
     }
   }
   else {
+  
     // use an alternative to CMA here
   }
 

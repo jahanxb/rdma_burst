@@ -241,9 +241,11 @@ int socket_client_connect(struct xfer_config *cfg, char *host) {
   else
     ai_family = AF_INET;
 
-  if ((s=socket(ai_family, SOCK_STREAM, 0)) == -1)
+  if ((s=socket(ai_family, SOCK_STREAM, 0)) == -1) {
+    
     diep("socket");
 
+  }
   server = gethostbyname(host);
   if (server == NULL) {
     fprintf(stderr,"ERROR, no such host as %s\n", host);
@@ -255,12 +257,15 @@ int socket_client_connect(struct xfer_config *cfg, char *host) {
   bcopy(server->h_addr, &serveraddr.sin_addr.s_addr, server->h_length);
   serveraddr.sin_port = htons(cfg->port);
 
-  if (connect(s, (struct sockaddr*)&serveraddr, slen) < 0)
+  if (connect(s, (struct sockaddr*)&serveraddr, slen) < 0){
+    
     diep("connect");
+  
+  }
 
   cfg->cntl_sock = s;
   printf("\n inside socket : %d \n",s);
-
+  
   return s;
 }
 
@@ -286,6 +291,7 @@ int socket_server_start(struct xfer_config *cfg) {
     diep("bind");
 
   listen(lfd, 1024);
+
 
   return lfd;
   }
@@ -769,8 +775,9 @@ int do_rdma_client(struct xfer_config *cfg) {
   };
 
   // connect RDMA control conn
-  socket_client_connect(cfg, cfg->cntl);
-
+  int sclient=1;
+  sclient = socket_client_connect(cfg, cfg->cntl);
+  printf("\n sclient value : %d \n",sclient);
   // setup the RDMA connect struct
   data.servername = cfg->host;
   data.local_priv = &pdata;
@@ -857,7 +864,7 @@ int do_rdma_client(struct xfer_config *cfg) {
   xfer_rdma_finalize(&data);
 
   close(cfg->cntl_sock);
-
+  close(sclient);
   return 0;
 }
 
@@ -1324,8 +1331,16 @@ int main(int argc, char **argv) {
     
     numo = explore_dir(cfg.fname);
     printf("\n Total no. of files : %d \n",numo);
-    
-    
+    // new comment
+  //      int i, n;
+  // pthread_t rthr, pthr, rwthr;
+  // struct xfer_context *ctx = NULL;
+  // XFER_RDMA_buf_handle *hptr;
+
+  // struct message msg;
+  // struct timeval start_time, end_time;
+  // size_t slab_bytes;
+  // end - new comment   
     
     cfg.num_files = numo;
     
@@ -1340,13 +1355,65 @@ int main(int argc, char **argv) {
       d = opendir(path);
       
       char full_path[1000];
+
+    struct sockaddr_in serveraddr;
+    struct hostent *server;
+
+    int s, slen=sizeof(serveraddr);
+    int ai_family;
+
+    if (cfg.use_sdp) {
+      ai_family = AF_INET_SDP;
+    }
+    else
+    {
+      ai_family = AF_INET;
+    }
+
+    // if ((s=socket(ai_family, SOCK_STREAM, 0)) == -1) {
+    
+    //   diep("socket");
+
+    // }
+    // server = gethostbyname(cfg.host);
+    // if (server == NULL) {
+    //   fprintf(stderr,"ERROR, no such host as %s\n", cfg.host);
+    //   diep("gethostbyname");
+    // }
+
+    // bzero(&serveraddr, sizeof(serveraddr));
+    // serveraddr.sin_family = ai_family;
+    // bcopy(server->h_addr, &serveraddr.sin_addr.s_addr, server->h_length);
+    // serveraddr.sin_port = htons(cfg.port);
+
+    // if (connect(s, (struct sockaddr*)&serveraddr, slen) < 0){
+    
+    //   diep("connect");
+  
+    // }
+
+    // cfg.cntl_sock = s;
+    // printf("\n inside socket : %d \n",s);
+
+
+    /******************/
+    // if ((s=socket(ai_family, SOCK_STREAM, 0)) == -1) {
+    
+    //   diep("socket");
+
+    // }
+
+
       if (d)
       {
         
         int cnt = 0;
+        // int ssrock;
+        // ssrock = socket_client_connect(&cfg, cfg.cntl);
+        // printf("\n ssrock value : %d \n",ssrock);
           while ((dir = readdir(d)) != NULL)
             { 
-              
+              s=socket(ai_family, SOCK_STREAM, 0);
               //Condition to check regular file.
                if(dir->d_type==DT_REG){
                 //cfg.bytes = cfg.bytes * cnt;
@@ -1400,6 +1467,7 @@ int main(int argc, char **argv) {
     cfg.buflen = (1UL << cfg.slab_order);
 
   if (!cfg.use_rdma) {
+    
     if (cfg.server)
       cfg.slab = psd_slabs_buf_create(cfg.buflen, cfg.slab_parts, 0);
     else
@@ -1480,13 +1548,16 @@ int main(int argc, char **argv) {
       
       /******************/
      
-
+      
        if (cfg.cntl == NULL) {
-    cfg.cntl = cfg.host;
+        
+         cfg.cntl = cfg.host;
+   
        }
 
   // check if we have anything to send/recv at this point
-  if (!cfg.server && cfg.fname && !cfg.bytes) {
+
+  if (!cfg.server && cfg.fname && !cfg.bytes) { // this comment 
     //printf("\n After sending first file , i am here  \n");
   
     goto exitc;
@@ -1498,6 +1569,7 @@ int main(int argc, char **argv) {
     //do_rdma_client(&cfg);
   
   // printf("\n a b repeat \n");
+  // this comment
     int i, n;
   pthread_t rthr, pthr, rwthr;
   struct xfer_context *ctx = NULL;
@@ -1506,6 +1578,7 @@ int main(int argc, char **argv) {
   struct message msg;
   struct timeval start_time, end_time;
   size_t slab_bytes;
+  // end - this comment 
 
   struct mdata pdata = {
     .buflen = cfg.buflen,
@@ -1516,7 +1589,40 @@ int main(int argc, char **argv) {
   };
   // pass
   // connect RDMA control conn
-  socket_client_connect(&cfg, cfg.cntl);
+  
+  
+    server = gethostbyname(cfg.host);
+    if (server == NULL) {
+      fprintf(stderr,"ERROR, no such host as %s\n", cfg.host);
+      diep("gethostbyname");
+    }
+
+    bzero(&serveraddr, sizeof(serveraddr));
+    serveraddr.sin_family = ai_family;
+    bcopy(server->h_addr, &serveraddr.sin_addr.s_addr, server->h_length);
+    serveraddr.sin_port = htons(cfg.port);
+
+    if (connect(s, (struct sockaddr*)&serveraddr, slen) < 0){
+    
+      diep("connect");
+  
+    }
+
+    cfg.cntl_sock = s;
+    printf("\n inside socket : %d \n",s);
+
+
+
+
+  // int ssrock;
+  // if (cnt==0){
+  // ssrock = socket_client_connect(&cfg, cfg.cntl);
+  // }
+  // else {
+  //   continue;
+  // }
+  // printf("\n ssrock value : %d \n",ssrock);
+
 
   // setup the RDMA connect struct
   data.servername = cfg.host;
@@ -1535,17 +1641,18 @@ int main(int argc, char **argv) {
   }
   //printf("\n before connection ctx = xfer_rdma_client_connect(&data) \n ");
   ctx = xfer_rdma_client_connect(&data);
+  
   if (!ctx) {
     fprintf(stderr, "could not get client context\n");
     return -1;
   }
   
   cfg.ctx = ctx;
-
+  
   if (rdma_slab_bufs_reg(&cfg)) {
     
     return -1; }
-
+ 
   // exchange pointers
   printf("\n before slab exchange pointer the file : %s \n",cfg.fname);
   
@@ -1559,7 +1666,7 @@ int main(int argc, char **argv) {
     psd_slabs_buf_curr_swap(cfg.slab);
 
     //rdma_slab_bufs_unreg(&cfg);
-  //xfer_rdma_finalize(&data);
+    //xfer_rdma_finalize(&data);
   } 
 
   printf("Metadata exchange complete\n");
@@ -1612,30 +1719,84 @@ int main(int argc, char **argv) {
   gettimeofday(&end_time, NULL);
   print_bw(&start_time, &end_time, total_bytes);
 
-  rdma_slab_bufs_unreg(&cfg);
-  xfer_rdma_finalize(&data);
+  rdma_slab_bufs_unreg(&cfg); // this comment
+  xfer_rdma_finalize(&data); // this comment
 
-  close(cfg.cntl_sock);
+
+    //psd_slabs_buf_free(cfg.slab); // new comment
+    //psd_slabs_buf_reset(cfg.slab); // new comment
+
+  // printf("\n cfg.cntl_sock : %d | ssrock : %d \n",cfg.cntl_sock,ssrock);
+
+  printf("\n cfg.cntl_sock : %d | \n",cfg.cntl_sock);
+  close(cfg.cntl_sock); // this comment
+   // this comment
     
 }
 
  exitc:
+if (cfg.fname) {
+
+    printf("\n inside exitc \n");
+     //xfer_rdma_finalize(&data); // new comment
+     
+  //  rdma_slab_bufs_unreg(&cfg); // new comment
+  // xfer_rdma_finalize(&data); // new comment
+  
+   //close(cfg.cntl_sock); //this comment
+
+    psd_slabs_buf_free(cfg.slab);
+    psd_slabs_buf_reset(cfg.slab);
+    
+    //rdma_slab_bufs_unreg(&cfg);
+  //xfer_rdma_finalize(&data);
+   
+   close(fd); // this comment
+
+
+  }
+
 //  if (count==337) {
 //   usleep(100);
 //   usleep(10);
 //  }
-  if (cfg.fname) {
-    printf("\n inside exitc \n");
+  // if(cnt<=numo && cnt!=1){
+     
+  //   printf("\n Files still exists in directory \n");
+  //   xfer_rdma_finalize(&data);
+  //   close(cfg.cntl_sock); // this comment
+  //   //close(ssrock); // this comment
+  
 
-    close(cfg.cntl_sock);
-    psd_slabs_buf_free(cfg.slab);
-    psd_slabs_buf_reset(cfg.slab);
-    //closedir(d);
+
+
+
+
+  //   // fd = 0;
+  //   //psd_slabs_buf_free(cfg.slab);
+  //   //psd_slabs_buf_reset(cfg.slab);
+  //   close(fd);
+  // }
+  // else {
+
+  // if (cfg.fname) {
+
+  //   printf("\n inside exitc \n");
+     
+
+  //  close(cfg.cntl_sock); //this comment
+
+  //   psd_slabs_buf_free(cfg.slab);
+  //   psd_slabs_buf_reset(cfg.slab);
     
-    //rdma_slab_bufs_unreg(&cfg);
-  //xfer_rdma_finalize(&data);
-    close(fd);
-  }
+  //   //rdma_slab_bufs_unreg(&cfg);
+  // //xfer_rdma_finalize(&data);
+   
+  //  close(fd); // this comment
+
+
+  // }
+  // }
 
   if (cfg.interval)
     pthread_cancel(rthr);
@@ -1657,9 +1818,14 @@ int main(int argc, char **argv) {
       
       } // end of if-condition
             
+            
             }
-      
+            
+     
+     close(cfg.cntl_sock); // new comment 
+    
       closedir(d);
+
     
     
     
@@ -1695,7 +1861,7 @@ printf("\n exppath : %s \n",exppath);
 
 
 
- for (int i=0;i<1001;i++) {
+ for (int i=0;i<10001;i++) {
   
 #ifndef HAVE_RDMA
   if (cfg.use_rdma) {
