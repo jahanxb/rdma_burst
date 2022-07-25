@@ -241,9 +241,11 @@ int socket_client_connect(struct xfer_config *cfg, char *host) {
   else
     ai_family = AF_INET;
 
-  if ((s=socket(ai_family, SOCK_STREAM, 0)) == -1)
+  if ((s=socket(ai_family, SOCK_STREAM, 0)) == -1) {
+    
     diep("socket");
 
+  }
   server = gethostbyname(host);
   if (server == NULL) {
     fprintf(stderr,"ERROR, no such host as %s\n", host);
@@ -255,8 +257,11 @@ int socket_client_connect(struct xfer_config *cfg, char *host) {
   bcopy(server->h_addr, &serveraddr.sin_addr.s_addr, server->h_length);
   serveraddr.sin_port = htons(cfg->port);
 
-  if (connect(s, (struct sockaddr*)&serveraddr, slen) < 0)
+  if (connect(s, (struct sockaddr*)&serveraddr, slen) < 0){
+    
     diep("connect");
+  
+  }
 
   cfg->cntl_sock = s;
   printf("\n inside socket : %d \n",s);
@@ -276,6 +281,7 @@ int socket_server_start(struct xfer_config *cfg) {
     ai_family = AF_INET;
 
   lfd = socket(ai_family, SOCK_STREAM, 0);
+  printf("\n lfd value on socket server start: %d \n",lfd);
 
   bzero(&serveraddr, sizeof(serveraddr));
   serveraddr.sin_family = ai_family;
@@ -285,7 +291,9 @@ int socket_server_start(struct xfer_config *cfg) {
   if (bind(lfd, (struct sockaddr *)&serveraddr, sizeof(serveraddr)) == -1)
     diep("bind");
 
+
   listen(lfd, 1024);
+   
 
   return lfd;
   }
@@ -1516,7 +1524,9 @@ int main(int argc, char **argv) {
   };
   // pass
   // connect RDMA control conn
-  socket_client_connect(&cfg, cfg.cntl);
+  int ssrock;
+  ssrock = socket_client_connect(&cfg, cfg.cntl);
+  printf("\n ssrock value : %d \n",ssrock);
 
   // setup the RDMA connect struct
   data.servername = cfg.host;
@@ -1692,10 +1702,23 @@ char newfoldername[1000] = {0};
 strcpy(exppath,cfg.fname);
 printf("\n exppath : %s \n",exppath);
 //char exppath[1000] = "0";
+      int i, n, lfd, clilen;
+  pthread_t wthr, pthr;
+  struct mdata *pdata;
+  struct xfer_context *ctx = NULL;
+  XFER_RDMA_buf_handle *hptr;
 
+  struct message msg;
+  struct sockaddr_in cliaddr;
+  struct timeval start_time, end_time;
+  size_t bytes_recv = 0;
+  size_t slab_bytes;
 
+  clilen = sizeof(cliaddr);
+  //ctx = xfer_rdma_server_connect(&data); // new comment
 
- for (int i=0;i<1001;i++) {
+int count=0;
+ for (int j=0;j<10001;j++) {
   
 #ifndef HAVE_RDMA
   if (cfg.use_rdma) {
@@ -1770,7 +1793,9 @@ printf("\n exppath : %s \n",exppath);
 #endif
   }
 
-printf("\n File being Processed: %d \n",i);
+count = count + 1;
+printf("\n File being Processed: %d \n",j);
+
   if (cfg.time && !cfg.fname)
     pthread_create(&tthr, NULL, time_thread, &cfg.time);
 
@@ -1848,26 +1873,13 @@ printf("\n File being Processed: %d \n",i);
       printf("\n RDMA Server: \n");
       //do_rdma_server(&cfg);
       
-      int i, n, lfd, clilen;
-  pthread_t wthr, pthr;
-  struct mdata *pdata;
-  struct xfer_context *ctx = NULL;
-  XFER_RDMA_buf_handle *hptr;
 
-  struct message msg;
-  struct sockaddr_in cliaddr;
-  struct timeval start_time, end_time;
-  size_t bytes_recv = 0;
-  size_t slab_bytes;
-
-  clilen = sizeof(cliaddr);
-  
 
   if(validator==0) {
   lfd = socket_server_start(&cfg);
   }
   else {
-    printf("\n Connection is already establised , Use same netconfig \n ");
+    printf("\n Connection is already establised , Use same netconfig  : %d \n",lfd);
     
   }
 
@@ -1890,7 +1902,7 @@ printf("\n File being Processed: %d \n",i);
     diep("send");
   }      
   
-  ctx = xfer_rdma_server_connect(&data);
+   ctx = xfer_rdma_server_connect(&data); // this comment
   if (!ctx) {
     fprintf(stderr, "could not get client context\n");
     return -1;
@@ -1962,8 +1974,8 @@ printf("\n File being Processed: %d \n",i);
   gettimeofday(&end_time, NULL);
   print_bw(&start_time, &end_time, total_bytes);
 
-  rdma_slab_bufs_unreg(&cfg);
-  xfer_rdma_finalize(&data);
+  rdma_slab_bufs_unreg(&cfg); // this comment 
+  xfer_rdma_finalize(&data); // this comment 
 
   // let the client close first
   n = recv(cfg.cntl_sock, &msg, sizeof(struct message), 0);
@@ -1978,6 +1990,10 @@ printf("\n File being Processed: %d \n",i);
 
     psd_slabs_buf_free(cfg.slab);
     psd_slabs_buf_reset(cfg.slab);
+    
+    // rdma_slab_bufs_unreg(&cfg); // new comment 
+    // xfer_rdma_finalize(&data); // new comment 
+
     //psd_slabs_buf_free(cfg.slab);
     //psd_slabs_buf_reset(cfg.slab);
   }
@@ -1988,7 +2004,11 @@ printf("\n File being Processed: %d \n",i);
 
       
     }
+
+    
  }
+// rdma_slab_bufs_unreg(&cfg); // new comment 
+//   xfer_rdma_finalize(&data); // new comment 
 
 
   return 0;

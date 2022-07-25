@@ -243,8 +243,11 @@ struct xfer_context *xfer_rdma_init_ctx(void *ptr, struct xfer_data *data) {
     fprintf(stderr, "%d:%s: Couldn't allocate MR\n", pid, __func__);
     return NULL;
   }
+  
+  
 
   ctx->ch = ibv_create_comp_channel(ctx->context);
+  
   if (!ctx->ch) {
     fprintf(stderr, "%d:%s: Couldn't create comp channel\n", pid,
             __func__);

@@ -1,0 +1,10 @@
+
+ exppath : /data/jahanxb/recv_data/fl 
+Using a SLaBS buffer of size 16777216 with 4 partitions of size 4194304
+
+ File being Processed: 0 
+
+ RDMA Server: 
+
+ lfd value on socket server start: 7 
+Waiting for RDMA control conn...
