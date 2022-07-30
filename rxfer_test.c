@@ -178,6 +178,7 @@ size_t fsize;
 
   pthread_t rthr;
   pthread_t tthr;
+  pthread_t cputhread;
 
   int fd = -1;
   int c;
@@ -248,20 +249,20 @@ void *print_all(void *arg)
     int c;
     FILE *f;
     int i=0;
-    strcpy(global_cpu_usage,"a");
+    //strcpy(global_cpu_usage,"a");
     //system("/opt/rdma_burst/cpu_usage.sh rxfer_test");
     //usleep(200);
-    f = popen("top -b -n 1 | grep  'rxfer_test' ","r");
+    //f = popen("top -b -n 1 | grep  'rxfer_test' ","r");
     
     
-   // f = popen("/opt/rdma_burst/cpu_usage.sh rxfer_test >> /opt/rdma_burst/temp.txt","r");
-    //f = popen("top -n 1 | grep  'rxfer_test'>> /opt/rdma_burst/temp.txt","r");
+   f = popen("/opt/rdma_burst/cpu_usage.sh rxfer_test >> /opt/rdma_burst/temp.txt","r");
+   // f = popen("top -n 1 | grep  'rxfer_test'>> /opt/rdma_burst/temp.txt","r");
     
-    while ((c = getc(f)) != EOF) {
-      //putchar(c);
-        global_cpu_usage[i++] = putchar(c);
-        }
-        putchar('\n');
+    // while ((c = getc(f)) != EOF) {
+    //     //putchar(c);
+    //     global_cpu_usage[i++] = putchar(c);
+    //     }
+    //     putchar('\n');
     
     pclose(f);
     
@@ -1529,6 +1530,8 @@ int main(int argc, char **argv) {
 
       if (d)
       {
+
+        
         
         int cnt = 0;
           while ((dir = readdir(d)) != NULL)
@@ -1539,7 +1542,7 @@ int main(int argc, char **argv) {
                 //cfg.bytes = cfg.bytes * cnt;
                 pthread_t rthr;
                 pthread_t tthr;
-                pthread_t cputhread;
+                
 
 
                 int fd = -1;
@@ -1828,6 +1831,8 @@ int main(int argc, char **argv) {
   // start RDMA threads
   pthread_create(&pthr, NULL, rdma_poll_thread, &cfg);
   pthread_create(&rwthr, NULL, rdma_write_thread,&cfg);
+
+  
   
   
   //print_all();  
@@ -1902,7 +1907,12 @@ if (cfg.fname) {
 
  
     
-    FILE *f;
+  FILE *f;
+   
+  // pthread_create(&cputhread,NULL,print_all,NULL);
+    
+  // pthread_detach(cputhread);
+
   if (cnt==0) {
   f = fopen("client_stats.log", "w");
   if (f == NULL) { 
@@ -1919,9 +1929,7 @@ if (cfg.fname) {
     
     // if(strcasecmp(global_cpu_usage,"a")==0) {
 
-    //   pthread_create(&cputhread,NULL,print_all,NULL);
-    
-    //    pthread_detach(cputhread);
+      
 
     // }
  
@@ -1929,15 +1937,15 @@ if (cfg.fname) {
     //fprintf(f, cfg.host,",",cfg.port,",",cnt);
     fprintf(f, "\n%d,%s,%d,%lu,%d,%s,%.1f,%f,%s",cnt,cfg.host,cfg.port,cfg.slab->p_size,cfg.slab_parts,global_bw,global_filesize,global_timetaken,global_cpu_usage);
     //printf("\n cpu_usage : %s \n",global_cpu_usage);
-    strcpy(global_cpu_usage,"a");
+    //strcpy(global_cpu_usage,"a");
     
-  // pthread_cancel(cputhread);
+  //pthread_cancel(cputhread);
   
   }
   
   cnt++;
   fclose(f);
-
+  //pthread_cancel(cputhread);
 
 
       /******************/
@@ -2277,9 +2285,11 @@ printf("\n File being Processed: %d \n",i);
     //psd_slabs_buf_reset(cfg.slab);
   }
 
-  if (cfg.interval)
+  if (cfg.interval) {
     pthread_cancel(rthr);
 
+   
+  }
 
       
     }
