@@ -8,12 +8,12 @@ Using a SLaBS buffer of size 16777216 with 4 partitions of size 4194304
 
  lfd value on socket server start: 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     732.23 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     735.74 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -26,12 +26,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     944.68 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     934.19 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -44,12 +44,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     605.60 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     597.89 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -62,12 +62,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     695.97 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     681.36 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -80,12 +80,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     810.02 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     807.16 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -98,12 +98,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     789.02 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     772.28 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -116,12 +116,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     594.82 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     584.23 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -134,12 +134,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     835.84 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     821.90 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -152,12 +152,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.2 sec]	      10.49 MB	     559.23 Mb/s	bytes: 10485760
+[0.0-0.2 sec]	      10.49 MB	     552.93 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -170,12 +170,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     603.12 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     592.57 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -188,12 +188,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     613.15 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     598.85 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -206,12 +206,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.2 sec]	      10.49 MB	     544.42 Mb/s	bytes: 10485760
+[0.0-0.2 sec]	      10.49 MB	     536.20 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -224,12 +224,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     798.78 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     788.16 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -242,12 +242,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     743.51 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     722.37 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -260,12 +260,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     599.23 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     589.15 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -278,12 +278,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     653.17 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     641.56 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -296,12 +296,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     565.66 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     561.17 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -314,12 +314,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     582.64 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     572.95 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -332,12 +332,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.2 sec]	      10.49 MB	     542.18 Mb/s	bytes: 10485760
+[0.0-0.2 sec]	      10.49 MB	     538.69 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -350,12 +350,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     737.65 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     738.93 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -368,12 +368,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     584.71 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     585.01 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -386,12 +386,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     756.66 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     754.39 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -404,12 +404,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     684.66 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     687.04 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -422,12 +422,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     654.33 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     654.05 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -440,12 +440,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     894.50 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     895.86 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -458,12 +458,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     580.69 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     587.62 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -476,12 +476,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     647.72 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     662.76 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -494,12 +494,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	    1290.14 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	    1300.88 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -512,12 +512,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     654.03 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     662.98 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -530,12 +530,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     611.52 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     624.55 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -548,12 +548,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     777.57 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     789.23 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -566,12 +566,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     563.16 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     573.26 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -584,12 +584,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     632.51 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     646.12 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -602,12 +602,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     873.46 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     890.19 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -620,12 +620,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.2 sec]	      10.49 MB	     528.77 Mb/s	bytes: 10485760
+[0.0-0.2 sec]	      10.49 MB	     536.08 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -638,12 +638,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     755.93 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     773.24 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -656,12 +656,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     625.91 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     639.41 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -674,12 +674,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	    1275.17 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	    1273.28 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -692,12 +692,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.2 sec]	      10.49 MB	     527.43 Mb/s	bytes: 10485760
+[0.0-0.2 sec]	      10.49 MB	     535.59 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -710,12 +710,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     624.87 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     640.87 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -728,12 +728,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     725.07 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     734.99 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -746,12 +746,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.2 sec]	      10.49 MB	     531.81 Mb/s	bytes: 10485760
+[0.0-0.2 sec]	      10.49 MB	     537.02 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -764,12 +764,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     885.62 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     882.65 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -782,12 +782,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	    1234.36 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	    1248.16 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -800,12 +800,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     795.80 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     802.07 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -818,12 +818,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     565.49 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     575.65 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -836,12 +836,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.2 sec]	      10.49 MB	     540.77 Mb/s	bytes: 10485760
+[0.0-0.2 sec]	      10.49 MB	     546.28 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -854,12 +854,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     627.29 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     640.99 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -872,12 +872,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     600.57 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     609.59 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -890,12 +890,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     875.10 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     895.29 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -908,12 +908,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     682.96 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     686.58 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -926,12 +926,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     915.78 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     918.14 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -944,12 +944,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     571.76 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     571.26 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -962,12 +962,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     716.72 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     712.93 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -980,12 +980,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.2 sec]	      10.49 MB	     504.28 Mb/s	bytes: 10485760
+[0.0-0.2 sec]	      10.49 MB	     502.57 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -998,12 +998,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     662.42 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     659.79 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1016,12 +1016,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	    1006.48 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	    1005.31 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1034,12 +1034,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     795.54 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     788.54 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1052,12 +1052,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     619.73 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     614.48 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1070,12 +1070,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.2 sec]	      10.49 MB	     513.52 Mb/s	bytes: 10485760
+[0.0-0.2 sec]	      10.49 MB	     507.40 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1088,12 +1088,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     800.52 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     788.33 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1106,12 +1106,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     869.02 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     857.44 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1124,12 +1124,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     756.93 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     750.06 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1142,12 +1142,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     640.77 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     632.90 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1160,12 +1160,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	    1255.59 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	    1255.82 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1178,12 +1178,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	    1174.10 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	    1191.56 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1196,12 +1196,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	    1218.48 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	    1225.26 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1214,12 +1214,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     628.77 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     623.73 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1232,12 +1232,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     760.51 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     758.66 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1250,12 +1250,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     578.20 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     577.71 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1268,12 +1268,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     642.41 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     649.02 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1286,12 +1286,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	    1268.58 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	    1258.79 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1304,12 +1304,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     660.35 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     659.30 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1322,12 +1322,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.2 sec]	      10.49 MB	     558.98 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     559.85 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1340,12 +1340,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     846.33 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     835.85 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1358,12 +1358,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     627.28 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     620.96 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1376,12 +1376,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     625.14 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     622.24 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1394,12 +1394,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	    1249.81 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	    1236.27 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1412,12 +1412,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     599.82 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     601.75 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1430,12 +1430,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     932.18 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     934.25 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1448,12 +1448,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     575.13 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     571.89 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1466,12 +1466,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	    1120.90 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	    1116.81 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1484,12 +1484,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     648.02 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     644.48 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1502,12 +1502,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     701.88 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     700.73 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1520,12 +1520,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     786.36 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     796.89 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1538,12 +1538,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.2 sec]	      10.49 MB	     532.20 Mb/s	bytes: 10485760
+[0.0-0.2 sec]	      10.49 MB	     538.34 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1556,12 +1556,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     584.76 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     595.44 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1574,12 +1574,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     606.47 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     614.59 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1592,12 +1592,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     971.07 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     992.28 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1610,12 +1610,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     812.60 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     825.07 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1628,12 +1628,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     743.57 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     745.84 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1646,12 +1646,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     598.37 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     605.69 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1664,12 +1664,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     580.90 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     592.65 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1682,12 +1682,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	    1332.03 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	    1362.38 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1700,12 +1700,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     614.78 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     623.34 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1718,12 +1718,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     580.78 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     585.19 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1736,12 +1736,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     614.34 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     621.23 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1754,12 +1754,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     568.55 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     577.19 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1772,12 +1772,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     814.79 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     826.11 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1790,12 +1790,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     808.49 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     820.23 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1808,12 +1808,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	    1336.55 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	    1312.07 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1826,12 +1826,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     644.48 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     644.03 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1844,12 +1844,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     823.56 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     825.61 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1862,12 +1862,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     594.25 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     598.47 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1880,12 +1880,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     559.78 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     563.75 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1898,12 +1898,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     635.98 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     632.63 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1916,12 +1916,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     899.11 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     898.47 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1934,12 +1934,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     625.78 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     621.17 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1952,12 +1952,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     629.14 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     633.40 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1970,12 +1970,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     777.67 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     777.90 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -1988,12 +1988,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     635.15 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     631.48 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2006,12 +2006,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     662.25 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     657.34 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2024,12 +2024,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     858.40 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     852.89 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2042,12 +2042,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     844.29 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     839.84 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2060,12 +2060,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	    1349.80 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	    1340.50 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2078,12 +2078,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     584.47 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     585.54 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2096,12 +2096,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     668.25 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     668.45 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2114,12 +2114,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     679.05 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     667.25 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2132,12 +2132,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     736.78 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     724.49 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2150,12 +2150,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     806.98 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     802.02 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2168,12 +2168,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     719.33 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     708.45 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2186,12 +2186,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     677.44 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     667.94 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2204,12 +2204,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     845.56 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     852.22 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2222,12 +2222,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     775.59 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     763.51 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2240,12 +2240,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     687.17 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     680.48 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2258,12 +2258,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     869.49 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     853.14 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2276,12 +2276,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     591.62 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     589.08 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2294,12 +2294,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     794.51 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     788.14 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2312,12 +2312,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     855.33 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     850.09 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2330,12 +2330,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     775.37 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     772.18 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2348,12 +2348,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     831.16 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     821.24 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2366,12 +2366,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     799.33 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     791.39 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2384,12 +2384,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     592.57 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     582.51 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2402,12 +2402,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     647.19 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     646.18 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2420,12 +2420,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     611.93 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     611.21 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2438,12 +2438,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     564.29 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     562.31 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2456,12 +2456,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     636.06 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     635.65 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2474,12 +2474,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     826.69 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     828.73 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2492,12 +2492,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     628.32 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     628.44 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2510,12 +2510,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     616.11 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     618.05 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2528,12 +2528,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     630.86 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     630.56 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2546,12 +2546,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     743.46 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     736.94 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2564,12 +2564,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	    1371.00 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	    1366.91 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2582,12 +2582,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	    1406.52 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	    1396.54 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2600,12 +2600,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     769.06 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     764.71 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2618,12 +2618,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     582.45 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     578.28 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2636,12 +2636,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     814.78 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     808.82 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2654,12 +2654,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     617.43 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     617.00 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2672,12 +2672,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     665.72 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     668.03 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2690,12 +2690,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     660.75 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     661.89 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2708,12 +2708,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     757.89 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     764.51 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2726,12 +2726,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     682.79 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     683.37 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2744,12 +2744,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     880.71 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     881.19 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2762,12 +2762,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     568.75 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     566.53 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2780,12 +2780,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     609.05 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     609.08 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2798,12 +2798,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     859.76 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     865.83 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2816,12 +2816,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	    1301.57 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	    1291.05 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2834,12 +2834,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     690.68 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     692.80 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2852,12 +2852,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     632.86 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     632.41 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2870,12 +2870,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     767.62 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     768.06 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2888,12 +2888,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	    1216.69 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	    1215.21 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2906,12 +2906,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.2 sec]	      10.49 MB	     550.08 Mb/s	bytes: 10485760
+[0.0-0.2 sec]	      10.49 MB	     549.87 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2924,12 +2924,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     902.01 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     891.01 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2942,12 +2942,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     607.55 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     608.32 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2960,12 +2960,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     785.36 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     788.03 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2978,12 +2978,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     562.37 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     566.84 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -2996,12 +2996,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     592.19 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     592.37 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -3014,12 +3014,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     734.48 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     737.32 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -3032,12 +3032,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     931.47 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     929.14 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -3050,12 +3050,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     630.87 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     635.26 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -3068,12 +3068,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     664.89 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     662.24 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -3086,12 +3086,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     996.09 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     991.60 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -3104,12 +3104,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.2 sec]	      10.49 MB	     555.73 Mb/s	bytes: 10485760
+[0.0-0.2 sec]	      10.49 MB	     555.96 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -3122,12 +3122,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     667.07 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     672.94 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -3140,12 +3140,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     595.56 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     588.62 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -3158,12 +3158,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     601.07 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     596.43 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -3176,12 +3176,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	    1268.87 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	    1263.88 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -3194,12 +3194,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     562.09 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     563.55 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -3212,12 +3212,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     715.14 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     714.25 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -3230,12 +3230,12 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
 
  Connection is already establised , Use same netconfig  : 7 
 Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+27563: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
 
  sizeof struct message 72 
 Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
 Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     662.13 Mb/s	bytes: 10485760
+[0.0-0.1 sec]	      10.49 MB	     660.65 Mb/s	bytes: 10485760
 
  looper value changed to what: 5 
 
@@ -3247,1321 +3247,4 @@ Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
  RDMA Server: 
 
  Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     587.44 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 181 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     597.26 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 182 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     594.58 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 183 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.2 sec]	      10.49 MB	     553.58 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 184 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     584.91 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 185 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     873.73 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 186 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     646.02 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 187 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     725.26 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 188 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     605.35 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 189 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     664.75 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 190 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     675.55 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 191 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     709.69 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 192 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     654.31 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 193 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     603.67 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 194 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     593.88 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 195 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     615.34 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 196 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	    1291.73 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 197 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     589.62 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 198 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     788.94 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 199 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     772.84 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 200 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     591.11 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 201 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     909.50 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 202 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     603.49 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 203 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     642.84 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 204 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	    1220.78 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 205 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     625.67 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 206 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     571.31 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 207 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.2 sec]	      10.49 MB	     516.64 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 208 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.2 sec]	      10.49 MB	     543.63 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 209 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     618.85 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 210 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     621.26 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 211 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     578.92 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 212 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     599.43 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 213 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     640.53 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 214 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     630.49 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 215 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     576.91 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 216 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     665.18 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 217 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.2 sec]	      10.49 MB	     544.31 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 218 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     607.51 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 219 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     766.77 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 220 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     790.74 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 221 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     744.60 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 222 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     871.48 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 223 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.2 sec]	      10.49 MB	     556.06 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 224 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     837.10 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 225 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	    1219.03 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 226 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     683.47 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 227 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     680.37 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 228 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	    1249.05 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 229 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     582.33 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 230 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     829.29 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 231 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     632.60 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 232 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     608.43 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 233 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	    1224.97 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 234 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     611.91 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 235 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	    1287.09 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 236 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     599.64 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 237 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     647.09 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 238 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     598.89 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 239 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     771.30 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 240 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     565.11 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 241 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     653.46 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 242 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     953.18 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 243 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     882.14 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 244 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     652.82 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 245 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.2 sec]	      10.49 MB	     537.36 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 246 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     613.21 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 247 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     576.55 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 248 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	    1308.35 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 249 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     621.30 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 250 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     710.06 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 251 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	    1279.63 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 252 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
-Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
-Metadata exchange complete
-[0.0-0.1 sec]	      10.49 MB	     574.44 Mb/s	bytes: 10485760
-
- looper value changed to what: 5 
-
- inside server cfg.fname 
-Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
-
- File being Processed: 253 
-
- RDMA Server: 
-
- Connection is already establised , Use same netconfig  : 7 
-Waiting for RDMA control conn...[connection from: 10.0.0.51]
-27902: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
-
- sizeof struct message 72 
+Waiting for RDMA control conn...
