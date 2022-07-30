@@ -1,0 +1,5477 @@
+
+ Total no. of files : 9999 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_3258.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_3258.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     745.59 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_9057.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_9057.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     938.56 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_3672.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_3672.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     598.63 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_4104.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_4104.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     682.72 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_9516.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_9516.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     809.74 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_4519.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_4519.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     774.17 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_4066.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_4066.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     585.38 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_2455.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_2455.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     824.51 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_5240.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_5240.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.2 sec]	      10.49 MB	     553.73 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_6286.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_6286.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     593.74 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_3517.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_3517.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     599.54 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_365.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_365.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.2 sec]	      10.49 MB	     537.17 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_8793.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_8793.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     790.52 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_7332.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_7332.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     723.75 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_758.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_758.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     590.21 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_6139.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_6139.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     642.84 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_9928.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_9928.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     561.96 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_3080.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_3080.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     573.47 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_3763.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_3763.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.2 sec]	      10.49 MB	     539.78 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_442.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_442.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     741.10 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_1663.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_1663.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     586.07 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_8925.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_8925.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     756.82 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_3997.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_3997.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     688.11 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_4248.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_4248.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     655.45 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_9748.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_9748.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     898.58 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_8663.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_8663.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     588.67 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_6679.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_6679.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     664.27 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_5689.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_5689.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	    1304.02 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_2830.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_2830.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     664.51 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_2356.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_2356.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     626.31 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_4482.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_4482.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     791.84 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_345.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_345.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     574.36 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_3934.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_3934.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     647.83 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_1857.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_1857.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     893.16 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_829.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_829.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.2 sec]	      10.49 MB	     537.44 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_8943.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_8943.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     775.82 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_1249.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_1249.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     640.71 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_9855.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_9855.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	    1281.21 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_4948.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_4948.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.2 sec]	      10.49 MB	     536.45 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_7198.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_7198.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     642.34 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_5896.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_5896.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     737.01 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_52.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_52.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.2 sec]	      10.49 MB	     538.35 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_4646.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_4646.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     885.11 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_2796.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_2796.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	    1255.16 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_5475.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_5475.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     804.39 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_6913.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_6913.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     576.90 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_2038.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_2038.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.2 sec]	      10.49 MB	     546.97 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_1619.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_1619.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     641.64 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_1799.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_1799.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     610.75 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_5354.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_5354.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     897.52 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_9757.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_9757.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     687.53 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_9253.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_9253.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     921.03 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_1887.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_1887.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     571.91 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_143.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_143.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     714.45 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_5004.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_5004.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.2 sec]	      10.49 MB	     503.28 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_1293.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_1293.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     661.42 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_1268.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_1268.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	    1009.58 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_9060.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_9060.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     789.81 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_3999.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_3999.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     615.11 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_3625.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_3625.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.2 sec]	      10.49 MB	     508.19 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_5385.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_5385.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     790.57 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_5346.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_5346.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     860.48 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_4508.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_4508.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     752.33 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_702.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_702.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     634.24 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_3379.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_3379.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	    1258.70 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_4718.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_4718.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	    1196.95 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_4807.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_4807.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	    1229.12 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_8429.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_8429.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     624.62 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_8847.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_8847.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     760.31 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_1038.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_1038.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     578.48 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_5781.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_5781.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     650.04 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_2658.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_2658.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	    1262.70 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_6208.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_6208.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     660.28 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_7166.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_7166.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     561.22 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_2223.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_2223.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     837.55 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_7945.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_7945.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     622.50 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_7937.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_7937.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     623.65 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_5692.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_5692.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	    1243.13 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_826.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_826.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     602.46 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_9073.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_9073.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     936.51 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_243.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_243.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     572.93 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_652.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_652.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	    1120.11 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_255.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_255.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     646.52 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_2065.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_2065.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     701.65 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_9772.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_9772.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     798.64 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_8188.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_8188.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.2 sec]	      10.49 MB	     539.86 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_3686.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_3686.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     596.55 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_8542.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_8542.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     616.37 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_5502.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_5502.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     993.98 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_9572.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_9572.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     827.01 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_4470.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_4470.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     746.60 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_2896.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_2896.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     606.93 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_3710.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_3710.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     593.96 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_2777.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_2777.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	    1367.36 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_5845.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_5845.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     624.69 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_7056.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_7056.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     586.36 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_5800.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_5800.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     623.15 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_6034.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_6034.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     577.68 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_5446.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_5446.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     828.69 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_9568.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_9568.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     823.81 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_2640.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_2640.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	    1316.75 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_1631.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_1631.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     644.89 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_9106.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_9106.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     826.90 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_7797.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_7797.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     599.88 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_3972.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_3972.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     564.44 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_3474.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_3474.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     634.17 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_600.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_600.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     900.69 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_8270.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_8270.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     622.34 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_2064.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_2064.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     634.29 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_1457.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_1457.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     778.94 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_9912.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_9912.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     632.33 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_222.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_222.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     658.83 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_9278.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_9278.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     855.89 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_8831.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_8831.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     842.70 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_3343.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_3343.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	    1346.18 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_8362.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_8362.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     587.06 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_6595.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_6595.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     669.89 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_7255.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_7255.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     669.03 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_2546.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_2546.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     726.07 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_2539.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_2539.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     803.88 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_4665.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_4665.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     709.52 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_7680.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_7680.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     669.55 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_3208.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_3208.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     854.40 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_9502.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_9502.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     765.22 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_3941.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_3941.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     681.60 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_8951.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_8951.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     855.60 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_8315.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_8315.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     589.68 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_8691.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_8691.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     789.36 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_9614.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_9614.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     852.25 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_1054.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_1054.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     774.31 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_5520.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_5520.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     824.72 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_9657.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_9657.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     793.30 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_238.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_238.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     583.70 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_7891.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_7891.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     647.02 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_868.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_868.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     612.20 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_6172.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_6172.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     563.29 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_7451.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_7451.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     637.26 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_9380.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_9380.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     831.28 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_5904.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_5904.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     629.48 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_9932.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_9932.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     619.09 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_3714.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_3714.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     631.68 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_8997.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_8997.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     738.25 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_5721.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_5721.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	    1371.65 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_679.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_679.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	    1404.19 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_8048.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_8048.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     765.33 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_258.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_258.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     579.38 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_4391.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_4391.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     811.43 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_7780.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_7780.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     618.01 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_5137.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_5137.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     669.87 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_7763.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_7763.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     663.20 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_3256.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_3256.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     766.80 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_6651.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_6651.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     684.50 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_9595.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_9595.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     884.50 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_290.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_290.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     567.68 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_4875.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_4875.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     610.01 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_1375.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_1375.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     867.26 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_3328.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_3328.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	    1294.92 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_2130.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_2130.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     694.11 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_6105.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_6105.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     634.00 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_4200.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_4200.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     769.72 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_5634.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_5634.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	    1220.92 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_3488.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_3488.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.2 sec]	      10.49 MB	     550.42 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_9594.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_9594.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     893.96 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_1222.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_1222.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     609.73 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_8722.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_8722.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     790.95 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_6858.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_6858.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     567.96 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_1489.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_1489.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     593.46 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_5035.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_5035.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     739.20 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_9156.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_9156.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     932.74 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_1892.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_1892.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     636.70 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_7796.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_7796.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     663.76 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_5455.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_5455.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     996.15 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_7818.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_7818.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.2 sec]	      10.49 MB	     556.71 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_2036.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_2036.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     674.56 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_7920.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_7920.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     590.45 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_7981.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+Created SLAB buffer with SIZE: 268435456 PARTITIONS: 4
+
+ before slab exchange pointer the file : /data/jahanxb/10MB10000/10MB_7981.bin 
+raddr: 0x7ff404b76000, laddr: 0x7ffa155fb000, size: 67108864
+raddr: 0x7ff400b74000, laddr: 0x7ffa115f9000, size: 67108864
+raddr: 0x7ff3fcb72000, laddr: 0x7ffa0d5f7000, size: 67108864
+raddr: 0x7ff3f8b70000, laddr: 0x7ffa095f5000, size: 67108864
+Metadata exchange complete
+[0.0-0.1 sec]	      10.49 MB	     597.88 Mb/s	bytes: 10485760
+
+ cfg.cntl_sock : 7 | 
+
+ inside exitc 
+Using a SLaBS buffer of size 268435456 with 4 partitions of size 67108864
+
+ inside condition 
+/data/jahanxb/10MB10000/10MB_4734.bin
+file size: 10485760 (to transfer: 10485760)
+
+ after connect RDMA & !cfg.server 
+
+ serveraddr.sin_port: 21268 | cfg.port: 5203  
+
+ slen: 16 |  
+
+ conn is not < 0 value : 0 
+
+ inside socket : 7 
+4647: testing| port=18515 | ib_port=1 | tx_depth=16 | sl=0 | duplex=0 | cma=1 |
+
+ inside xfer_rdma_client_connect data->port : 18515 | data->servername : 10.0.0.50 
+C

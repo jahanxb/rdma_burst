@@ -62,6 +62,7 @@ struct xfer_data data = {
   
 };
 int numo=0;
+
 int explore_dir(char *);
 
 int explore_dir(char *foldername) {
@@ -81,11 +82,7 @@ int explore_dir(char *foldername) {
             if(dir->d_type==DT_REG){
               ++count;
               
-                //full_path[0]='\0';
-                // strcat(full_path,path);
-                // strcat(full_path,"/");
-                // strcat(full_path,dir->d_name);
-                //printf("%s\n",full_path);
+      
             }
             
         }
@@ -94,6 +91,26 @@ int explore_dir(char *foldername) {
     return count;
     
 }
+struct file_cpu {
+  char *filename;
+  int *count;
+};
+
+struct st_logger {
+  char *host_ip;
+  char *host_port;
+  char *local_port;
+  char *time;
+  char *write_speed;
+  char *read_speed;
+  char *cpu_usage;
+  char *cpu1;
+  char *cpu2;
+  char *bandwidth;
+  char *filesize;
+  char *slab_order;
+  char *slab_partition;
+};
 
 static struct timespec startup;
 static pthread_cond_t report_cond;
@@ -214,8 +231,44 @@ char *randstring(size_t length) {
     
     return randomString;
 }
+void print_all_1(FILE *stream)
+{
+    int c;
+    while ((c = getc(stream)) != EOF)
+        putchar(c);
+}
+
+char global_cpu_usage[100] = {0x00};
+
+void *print_all(void *arg)
+    {
+     // struct file_cpu *fc = *arg;
+      char * buffer = 0;
+    long length;
+    int c;
+    FILE *f;
+    int i=0;
+    strcpy(global_cpu_usage,"a");
+    //system("/opt/rdma_burst/cpu_usage.sh rxfer_test");
+    //usleep(200);
+    f = popen("top -b -n 1 | grep  'rxfer_test' ","r");
+    
+    
+   // f = popen("/opt/rdma_burst/cpu_usage.sh rxfer_test >> /opt/rdma_burst/temp.txt","r");
+    //f = popen("top -n 1 | grep  'rxfer_test'>> /opt/rdma_burst/temp.txt","r");
+    
+    while ((c = getc(f)) != EOF) {
+      //putchar(c);
+        global_cpu_usage[i++] = putchar(c);
+        }
+        putchar('\n');
+    
+    pclose(f);
+    
+ 
 
 
+    }
 
 void do_stop() {
   if (RUN)
@@ -340,10 +393,19 @@ char* print_bytes(double b, int bits) {
   return strdup(ret);
 }
 
+char *global_bw;
+double global_filesize;
+double global_timetaken;
+
 void print_bw(struct timeval *s, struct timeval *e, size_t b) {
   double rate = (double)b/difftv(s, e);
   printf("[0.0-%.1f sec]\t%14s\t%14s/s\tbytes: %lu\n", difftv(s, e),
          print_bytes(b, 0), print_bytes(rate, 1), b);
+
+  global_filesize = b;
+  global_bw = print_bytes(rate, 1);
+  global_timetaken = difftv(s, e);
+
 }
 
 int do_sendfile(struct xfer_config *cfg, int ifd, int ofd, size_t len) {
@@ -441,6 +503,25 @@ int vmsplice_to_fd(struct xfer_config *cfg, int fd, void *buf, size_t len) {
   }
   return len;
 }
+
+
+void *client_logger(void *arg) {
+  struct st_logger *stl = arg;
+  FILE *f;
+  f = fopen("client_stats.log", "w");
+  if (f == NULL) { 
+    fprintf(f,"\n cannot open log file \n");
+    
+  }
+  
+  fprintf(f, "\n host_ip,host_port,file_number,file_size,cpu_usage,cpu1,cpu2,cpu3,cpu4,cpu5,read_speed,write_speed,ss_delivery_speed \n");
+  
+  
+  fclose(f);
+  
+  }
+
+
 
 void *fread_thread(void *arg) {
   struct xfer_config *cfg = arg;
@@ -718,6 +799,89 @@ void rdma_slab_bufs_unreg(struct xfer_config *cfg) {
   }
 }
 
+void rdma_slab_bufs_reg_02thread(void *arg) {
+  struct xfer_config *cfg = arg;
+  int buf_count;
+  int i;
+
+  // slab buf
+  if (cfg->server)
+    cfg->slab = psd_slabs_buf_create(cfg->buflen, cfg->slab_parts, 0);
+  else
+    cfg->slab = psd_slabs_buf_create(cfg->buflen, cfg->slab_parts, 1);
+  if (!cfg->slab) {
+    fprintf(stderr, "could not allocate SLAB buffer\n");
+    //return -1;
+  }
+
+  buf_count = psd_slabs_buf_get_pcount(cfg->slab);
+  printf("\n cfg-slab : %lu \n",cfg->slab->size);
+  printf("Created SLAB buffer with SIZE: %lu PARTITIONS: %d\n",
+         psd_slabs_buf_get_size(cfg->slab), buf_count);
+
+  for (i=0; i < buf_count; i++) {
+    XFER_RDMA_buf_handle *handle;
+
+    handle = xfer_rdma_alloc_handle();
+    if (!handle) {
+      fprintf(stderr, "could not allocate RDMA buf handle\n");
+      //return -1;
+    }
+
+    handle->buf = psd_slabs_buf_addr_ind(cfg->slab, i);
+    handle->local_size = psd_slabs_buf_get_psize(cfg->slab);
+    if (xfer_rdma_register_buffer(cfg->ctx, handle) != 0) {
+      fprintf(stderr, "could not register buf ptr\n");
+      //return -1;
+    }
+    psd_slabs_buf_set_priv_data_ind(cfg->slab, handle, i);
+  }
+
+  //return 0;
+}
+
+
+void rdma_slab_bufs_reg_01thread(void *input) {
+  int buf_count;
+  int i;
+  //((struct xfer_config*)input)->server;
+  // slab buf
+  if (((struct xfer_config*)input)->server)
+    ((struct xfer_config*)input)->slab = psd_slabs_buf_create(((struct xfer_config*)input)->buflen, ((struct xfer_config*)input)->slab_parts, 0);
+  else
+    ((struct xfer_config*)input)->slab = psd_slabs_buf_create(((struct xfer_config*)input)->buflen, ((struct xfer_config*)input)->slab_parts, 1);
+  if (!((struct xfer_config*)input)->slab) {
+    fprintf(stderr, "could not allocate SLAB buffer\n");
+    //return -1;
+  }
+
+  buf_count = psd_slabs_buf_get_pcount(((struct xfer_config*)input)->slab);
+  printf("\n cfg-slab : %lu \n",((struct xfer_config*)input)->slab->size);
+  printf("Created SLAB buffer with SIZE: %lu PARTITIONS: %d\n",
+         psd_slabs_buf_get_size(((struct xfer_config*)input)->slab), buf_count);
+
+  for (i=0; i < buf_count; i++) {
+    XFER_RDMA_buf_handle *handle;
+
+    handle = xfer_rdma_alloc_handle();
+    if (!handle) {
+      fprintf(stderr, "could not allocate RDMA buf handle\n");
+      //return -1;
+    }
+
+    handle->buf = psd_slabs_buf_addr_ind(((struct xfer_config*)input)->slab, i);
+    handle->local_size = psd_slabs_buf_get_psize(((struct xfer_config*)input)->slab);
+    if (xfer_rdma_register_buffer(((struct xfer_config*)input)->ctx, handle) != 0) {
+      fprintf(stderr, "could not register buf ptr\n");
+      //return -1;
+    }
+    psd_slabs_buf_set_priv_data_ind(((struct xfer_config*)input)->slab, handle, i);
+  }
+
+  
+}
+
+
 int rdma_slab_bufs_reg(struct xfer_config *cfg) {
   int buf_count;
   int i;
@@ -733,6 +897,7 @@ int rdma_slab_bufs_reg(struct xfer_config *cfg) {
   }
 
   buf_count = psd_slabs_buf_get_pcount(cfg->slab);
+  printf("\n cfg-slab : %lu \n",cfg->slab->size);
   printf("Created SLAB buffer with SIZE: %lu PARTITIONS: %d\n",
          psd_slabs_buf_get_size(cfg->slab), buf_count);
 
@@ -1331,16 +1496,6 @@ int main(int argc, char **argv) {
     
     numo = explore_dir(cfg.fname);
     printf("\n Total no. of files : %d \n",numo);
-    // new comment
-  //      int i, n;
-  // pthread_t rthr, pthr, rwthr;
-  // struct xfer_context *ctx = NULL;
-  // XFER_RDMA_buf_handle *hptr;
-
-  // struct message msg;
-  // struct timeval start_time, end_time;
-  // size_t slab_bytes;
-  // end - new comment   
     
     cfg.num_files = numo;
     
@@ -1370,47 +1525,12 @@ int main(int argc, char **argv) {
       ai_family = AF_INET;
     }
 
-    // if ((s=socket(ai_family, SOCK_STREAM, 0)) == -1) {
-    
-    //   diep("socket");
-
-    // }
-    // server = gethostbyname(cfg.host);
-    // if (server == NULL) {
-    //   fprintf(stderr,"ERROR, no such host as %s\n", cfg.host);
-    //   diep("gethostbyname");
-    // }
-
-    // bzero(&serveraddr, sizeof(serveraddr));
-    // serveraddr.sin_family = ai_family;
-    // bcopy(server->h_addr, &serveraddr.sin_addr.s_addr, server->h_length);
-    // serveraddr.sin_port = htons(cfg.port);
-
-    // if (connect(s, (struct sockaddr*)&serveraddr, slen) < 0){
-    
-    //   diep("connect");
   
-    // }
-
-    // cfg.cntl_sock = s;
-    // printf("\n inside socket : %d \n",s);
-
-
-    /******************/
-    // if ((s=socket(ai_family, SOCK_STREAM, 0)) == -1) {
-    
-    //   diep("socket");
-
-    // }
-
 
       if (d)
       {
         
         int cnt = 0;
-        // int ssrock;
-        // ssrock = socket_client_connect(&cfg, cfg.cntl);
-        // printf("\n ssrock value : %d \n",ssrock);
           while ((dir = readdir(d)) != NULL)
             { 
               s=socket(ai_family, SOCK_STREAM, 0);
@@ -1419,6 +1539,8 @@ int main(int argc, char **argv) {
                 //cfg.bytes = cfg.bytes * cnt;
                 pthread_t rthr;
                 pthread_t tthr;
+                pthread_t cputhread;
+
 
                 int fd = -1;
                 int c;
@@ -1459,7 +1581,10 @@ int main(int argc, char **argv) {
       fprintf(stderr, "fcntl failed: %s", strerror(errno));
       exit(1);
     }
+    //rc = fcntl(cfg.pipe[0], F_SETPIPE_SZ, splice_size*4096);
     rc = fcntl(cfg.pipe[0], F_SETPIPE_SZ, splice_size*2);
+    //printf("\n splice_size[%d] : %ld | rc = %d \n",cnt,splice_size,rc);
+    //rc = fcntl(cfg.pipe[0], F_SETPIPE_SZ, splice_size*100);
   } while (rc >= 0); 
   
   // determine our buffer size if using order
@@ -1467,7 +1592,8 @@ int main(int argc, char **argv) {
     cfg.buflen = (1UL << cfg.slab_order);
 
   if (!cfg.use_rdma) {
-    
+    printf("\n You are not using rdma on client side. exiting... \n");
+    exit(0);
     if (cfg.server)
       cfg.slab = psd_slabs_buf_create(cfg.buflen, cfg.slab_parts, 0);
     else
@@ -1506,6 +1632,8 @@ int main(int argc, char **argv) {
     
     pthread_create(&tthr, NULL, time_thread, &cfg.time);
   }
+   
+   
 
                   printf("\n inside condition \n");
                   full_path[0]='\0';
@@ -1514,17 +1642,15 @@ int main(int argc, char **argv) {
                   strcat(full_path,dir->d_name);
                   printf("%s\n",full_path);
                   strcpy(cfg.fname,full_path);
-                  //strcat(cfg.fname,'\0');
-                  //strcat(cfg.fname,full_path);
-             // printf("\n cfg new fname: %s \n",cfg.fname);
-             // printf("\n");
+            
+            
+            
+            
+            
               fd = open(cfg.fname, O_RDONLY | O_DIRECT);
               mmap_flags = PROT_READ | PROT_WRITE;
             
-            // else {
-            //   fd = open(cfg.fname, O_RDWR | O_CREAT | O_TRUNC | O_DIRECT, S_IRUSR | S_IWUSR);
-            //   mmap_flags = PROT_READ | PROT_WRITE;
-            // }
+            
 
             if (fd < 0) {
               fprintf(stderr, "could not open file\n");
@@ -1542,10 +1668,7 @@ int main(int argc, char **argv) {
           cfg.fd = fd;
           printf("\n after connect RDMA & !cfg.server \n");
 
-          // } // end of if-condition
-          //   }
-          // closedir(d);
-      
+             
       /******************/
      
       
@@ -1562,14 +1685,10 @@ int main(int argc, char **argv) {
   
     goto exitc;
   }
-  //printf("\n a b repeat \n");
+  
   // [passed]
   if (!cfg.server) {
-    //signal(SIGINT, do_stop);
-    //do_rdma_client(&cfg);
-  
-  // printf("\n a b repeat \n");
-  // this comment
+ 
     int i, n;
   pthread_t rthr, pthr, rwthr;
   struct xfer_context *ctx = NULL;
@@ -1600,28 +1719,30 @@ int main(int argc, char **argv) {
     bzero(&serveraddr, sizeof(serveraddr));
     serveraddr.sin_family = ai_family;
     bcopy(server->h_addr, &serveraddr.sin_addr.s_addr, server->h_length);
+    
     serveraddr.sin_port = htons(cfg.port);
 
-    if (connect(s, (struct sockaddr*)&serveraddr, slen) < 0){
-    
+    printf("\n serveraddr.sin_port: %d | cfg.port: %d  \n",serveraddr.sin_port,cfg.port);
+    int conn;
+    conn = connect(s, (struct sockaddr*)&serveraddr, slen);
+
+      
+    printf("\n slen: %d |  \n",slen);
+
+    if (conn < 0){
+      printf("\n conn value : %d \n",conn);
       diep("connect");
   
+    }
+    else {
+      printf("\n conn is not < 0 value : %d \n",conn);
     }
 
     cfg.cntl_sock = s;
     printf("\n inside socket : %d \n",s);
 
+   
 
-
-
-  // int ssrock;
-  // if (cnt==0){
-  // ssrock = socket_client_connect(&cfg, cfg.cntl);
-  // }
-  // else {
-  //   continue;
-  // }
-  // printf("\n ssrock value : %d \n",ssrock);
 
 
   // setup the RDMA connect struct
@@ -1642,6 +1763,8 @@ int main(int argc, char **argv) {
   //printf("\n before connection ctx = xfer_rdma_client_connect(&data) \n ");
   ctx = xfer_rdma_client_connect(&data);
   
+    
+    
   if (!ctx) {
     fprintf(stderr, "could not get client context\n");
     return -1;
@@ -1649,9 +1772,26 @@ int main(int argc, char **argv) {
   
   cfg.ctx = ctx;
   
-  if (rdma_slab_bufs_reg(&cfg)) {
+  int tt=0;
+
+
+    pthread_t thread_id;
+    printf("Before Thread\n");
+    tt = rdma_slab_bufs_reg(&cfg);
     
-    return -1; }
+   
+    //pthread_create(&thread_id, NULL, rdma_slab_bufs_reg_01thread, &cfg); // 
+    //pthread_create(&thread_id, NULL, rdma_slab_bufs_reg_02thread, &cfg);
+    //pthread_join(thread_id, NULL);
+    
+    printf("After Thread\n");
+    printf("\n rdma_slab_bufs_reg: %d \n",tt);
+
+
+  
+  // if (rdma_slab_bufs_reg(&cfg)) {
+    
+  //   return -1; }
  
   // exchange pointers
   printf("\n before slab exchange pointer the file : %s \n",cfg.fname);
@@ -1661,23 +1801,21 @@ int main(int argc, char **argv) {
            psd_slabs_buf_get_priv_data(cfg.slab, PSB_CURR);
     xfer_rdma_wait_buffer(hptr);
     xfer_rdma_send_done(hptr);
+    
+
     printf("raddr: %p, laddr: %p, size: %lu\n", hptr->remote_mr->addr,
-           hptr->local_mr->addr, hptr->local_size);
+           hptr->local_mr->addr, hptr->local_size);  
+
     psd_slabs_buf_curr_swap(cfg.slab);
 
-    //rdma_slab_bufs_unreg(&cfg);
-    //xfer_rdma_finalize(&data);
+    
   } 
+ 
 
   printf("Metadata exchange complete\n");
 
   count = count + 1;
-  
-  // if(count==100 || count==200 || count==300||count==400||count==500) {
-  //   printf("\n Snooze Client after 100th file processed\n");
-  //   sleep(10);
-  // }
-  // init some variables
+    // init some variables
   total_bytes = 0;
   sent = 0;
   send_queued = 0;
@@ -1690,6 +1828,9 @@ int main(int argc, char **argv) {
   // start RDMA threads
   pthread_create(&pthr, NULL, rdma_poll_thread, &cfg);
   pthread_create(&rwthr, NULL, rdma_write_thread,&cfg);
+  
+  
+  //print_all();  
 
   gettimeofday(&start_time, NULL);
 
@@ -1699,6 +1840,7 @@ int main(int argc, char **argv) {
   if (full_path) {
     pthread_join(rthr, NULL);
     pthread_join(rwthr, NULL);
+    
   }
   else {
     int c = psd_slabs_buf_get_pcount(cfg.slab);
@@ -1719,14 +1861,13 @@ int main(int argc, char **argv) {
   gettimeofday(&end_time, NULL);
   print_bw(&start_time, &end_time, total_bytes);
 
+  
+ 
+
   rdma_slab_bufs_unreg(&cfg); // this comment
   xfer_rdma_finalize(&data); // this comment
 
 
-    //psd_slabs_buf_free(cfg.slab); // new comment
-    //psd_slabs_buf_reset(cfg.slab); // new comment
-
-  // printf("\n cfg.cntl_sock : %d | ssrock : %d \n",cfg.cntl_sock,ssrock);
 
   printf("\n cfg.cntl_sock : %d | \n",cfg.cntl_sock);
   close(cfg.cntl_sock); // this comment
@@ -1737,77 +1878,65 @@ int main(int argc, char **argv) {
  exitc:
 if (cfg.fname) {
 
-    printf("\n inside exitc \n");
-     //xfer_rdma_finalize(&data); // new comment
-     
-  //  rdma_slab_bufs_unreg(&cfg); // new comment
-  // xfer_rdma_finalize(&data); // new comment
+     printf("\n inside exitc \n");
   
-   //close(cfg.cntl_sock); //this comment
-
     psd_slabs_buf_free(cfg.slab);
     psd_slabs_buf_reset(cfg.slab);
     
-    //rdma_slab_bufs_unreg(&cfg);
-  //xfer_rdma_finalize(&data);
-   
+    
    close(fd); // this comment
 
 
   }
 
-//  if (count==337) {
-//   usleep(100);
-//   usleep(10);
-//  }
-  // if(cnt<=numo && cnt!=1){
-     
-  //   printf("\n Files still exists in directory \n");
-  //   xfer_rdma_finalize(&data);
-  //   close(cfg.cntl_sock); // this comment
-  //   //close(ssrock); // this comment
-  
 
-
-
-
-
-  //   // fd = 0;
-  //   //psd_slabs_buf_free(cfg.slab);
-  //   //psd_slabs_buf_reset(cfg.slab);
-  //   close(fd);
-  // }
-  // else {
-
-  // if (cfg.fname) {
-
-  //   printf("\n inside exitc \n");
-     
-
-  //  close(cfg.cntl_sock); //this comment
-
-  //   psd_slabs_buf_free(cfg.slab);
-  //   psd_slabs_buf_reset(cfg.slab);
-    
-  //   //rdma_slab_bufs_unreg(&cfg);
-  // //xfer_rdma_finalize(&data);
-   
-  //  close(fd); // this comment
-
-
-  // }
-  // }
 
   if (cfg.interval)
     pthread_cancel(rthr);
+    
 
 #ifdef WITH_XSP
   if (cfg.xsp_hop)
     xsp_close2(sess);
 #endif
 
+ 
+    
+    FILE *f;
+  if (cnt==0) {
+  f = fopen("client_stats.log", "w");
+  if (f == NULL) { 
+    fprintf(f,"\n cannot open log file \n");
+    
+  }
+ 
+        fprintf(f, "\nfile_number,host_ip,host_port,slab_buf_bytes,slab_order,slab_partition,bandwidth,file_size_bytes,time_taken_sec,overall_cpu");
+        fprintf(f, "\n%d,%s,%d,%lu,%d,%s,%.1f,%f,%s",cnt,cfg.host,cfg.port,cfg.slab->p_size,cfg.slab_parts,global_bw,global_filesize,global_timetaken,global_cpu_usage);
+
+  
+  }
+  else{
+    
+    // if(strcasecmp(global_cpu_usage,"a")==0) {
+
+    //   pthread_create(&cputhread,NULL,print_all,NULL);
+    
+    //    pthread_detach(cputhread);
+
+    // }
+ 
+    f = fopen("client_stats.log", "a+");
+    //fprintf(f, cfg.host,",",cfg.port,",",cnt);
+    fprintf(f, "\n%d,%s,%d,%lu,%d,%s,%.1f,%f,%s",cnt,cfg.host,cfg.port,cfg.slab->p_size,cfg.slab_parts,global_bw,global_filesize,global_timetaken,global_cpu_usage);
+    //printf("\n cpu_usage : %s \n",global_cpu_usage);
+    strcpy(global_cpu_usage,"a");
+    
+  // pthread_cancel(cputhread);
+  
+  }
+  
   cnt++;
-  // return 0;
+  fclose(f);
 
 
 
