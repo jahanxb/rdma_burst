@@ -1849,7 +1849,8 @@ if (cfg.fname) {
    *******/
 
 
-
+cfg.slab_parts = 10; //parition 
+cfg.slab_order = 28;
 
 int looper = 5;
 
@@ -2103,6 +2104,7 @@ printf("\n File being Processed: %d \n",j);
     n = recv(cfg.cntl_sock, &msg, sizeof(struct message), MSG_WAITALL);
     if (n <= 0) {
       fprintf(stderr, "RDMA control conn failed\n");
+     
       diep("recv");
     }
 
