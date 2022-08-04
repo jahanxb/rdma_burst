@@ -1922,7 +1922,7 @@ if (cfg.fname) {
     
   }
  
-        fprintf(f, "\nfile_number,host_ip,host_port,slab_buf_bytes,slab_order,slab_partition,bandwidth,file_size_bytes,time_taken_sec,overall_cpu");
+        fprintf(f, "\nfile_number,host_ip,host_port,slab_buf_bytes,slab_partition,bandwidth,file_size_bytes,time_taken_sec,overall_cpu");
         fprintf(f, "\n%d,%s,%d,%lu,%d,%s,%.1f,%f,%s",cnt,cfg.host,cfg.port,cfg.slab->p_size,cfg.slab_parts,global_bw,global_filesize,global_timetaken,global_cpu_usage);
 
   
