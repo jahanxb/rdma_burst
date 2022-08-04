@@ -1,3 +1,15 @@
 #!/bin/sh
-sudo ./rxfer_test -c 10.0.0.50 -i 1 -t 10 -f /data/jahanxb/10MB10000 -p 5201 -a 4 -o 28 -r &
-sudo ./cpu_usage.sh rxfer_test > temp.txt
+
+log_cpu_stats(){
+sudo ./cpu_usage.sh rxfer_test >> temp.txt
+}
+
+
+$i = 1;
+for j in {1...10000}
+do
+log_cpu_stats
+done
+
+wait
+echo "Process Completed.. Check Logs"

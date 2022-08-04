@@ -255,14 +255,14 @@ void *print_all(void *arg)
     //f = popen("top -b -n 1 | grep  'rxfer_test' ","r");
     
     
-   f = popen("/opt/rdma_burst/cpu_usage.sh rxfer_test >> /opt/rdma_burst/temp.txt","r");
+   f = popen("/opt/rdma_burst/cpu_usage.sh rxfer_test >> /opt/rdma_burst/10mbcpustat.log","r");
    // f = popen("top -n 1 | grep  'rxfer_test'>> /opt/rdma_burst/temp.txt","r");
     
-    // while ((c = getc(f)) != EOF) {
-    //     //putchar(c);
-    //     global_cpu_usage[i++] = putchar(c);
-    //     }
-    //     putchar('\n');
+    while ((c = getc(f)) != EOF) {
+        //putchar(c);
+        global_cpu_usage[i++] = putchar(c);
+        }
+        putchar('\n');
     
     pclose(f);
     
@@ -509,7 +509,7 @@ int vmsplice_to_fd(struct xfer_config *cfg, int fd, void *buf, size_t len) {
 void *client_logger(void *arg) {
   struct st_logger *stl = arg;
   FILE *f;
-  f = fopen("client_stats.log", "w");
+  f = fopen("10mb_client_stats.log", "w");
   if (f == NULL) { 
     fprintf(f,"\n cannot open log file \n");
     
@@ -1532,7 +1532,9 @@ int main(int argc, char **argv) {
       {
 
         
-        
+
+        pthread_create(&cputhread,NULL,print_all,NULL);
+        pthread_detach(cputhread);
         int cnt = 0;
           while ((dir = readdir(d)) != NULL)
             { 
@@ -1914,7 +1916,7 @@ if (cfg.fname) {
   // pthread_detach(cputhread);
 
   if (cnt==0) {
-  f = fopen("client_stats.log", "w");
+  f = fopen("10mb_client_stats.log", "w");
   if (f == NULL) { 
     fprintf(f,"\n cannot open log file \n");
     
@@ -1933,7 +1935,7 @@ if (cfg.fname) {
 
     // }
  
-    f = fopen("client_stats.log", "a+");
+    f = fopen("10mb_client_stats.log", "a+");
     //fprintf(f, cfg.host,",",cfg.port,",",cnt);
     fprintf(f, "\n%d,%s,%d,%lu,%d,%s,%.1f,%f,%s",cnt,cfg.host,cfg.port,cfg.slab->p_size,cfg.slab_parts,global_bw,global_filesize,global_timetaken,global_cpu_usage);
     //printf("\n cpu_usage : %s \n",global_cpu_usage);
@@ -1963,7 +1965,8 @@ if (cfg.fname) {
     
       closedir(d);
 
-    
+    pthread_cancel(cputhread);
+    // pthread_kill(cputhread,SIGKILL);
     
     
     
