@@ -179,6 +179,13 @@ size_t fsize;
   pthread_t rthr;
   pthread_t tthr;
   pthread_t cputhread;
+  pthread_t wthr, pthr;
+  pthread_t thread_id;
+
+  pthread_t rthr, pthr, rwthr;
+  pthread_t wthr, pthr;
+
+
 
   int fd = -1;
   int c;
@@ -925,7 +932,7 @@ int rdma_slab_bufs_reg(struct xfer_config *cfg) {
 
 int do_rdma_client(struct xfer_config *cfg) {
   int i, n;
-  pthread_t rthr, pthr, rwthr;
+  //pthread_t rthr, pthr, rwthr; //commenting to only have one pthread
   struct xfer_context *ctx = NULL;
   XFER_RDMA_buf_handle *hptr;
 
@@ -1036,7 +1043,7 @@ int do_rdma_client(struct xfer_config *cfg) {
 
 int do_rdma_server(struct xfer_config *cfg) {
   int i, n, lfd, clilen;
-  pthread_t wthr, pthr;
+  //pthread_t wthr, pthr; //commenting to only have one pthread
   struct mdata *pdata;
   struct xfer_context *ctx = NULL;
   XFER_RDMA_buf_handle *hptr;
@@ -1155,7 +1162,7 @@ int do_rdma_server(struct xfer_config *cfg) {
 
 
 int do_socket_client(struct xfer_config *cfg) {
-  pthread_t rthr;
+ // pthread_t rthr; //commenting to only have one pthread
 
   struct timeval start_time, end_time;
 
@@ -1252,7 +1259,7 @@ int do_socket_client(struct xfer_config *cfg) {
 }
 
 int do_socket_server(struct xfer_config *cfg) {
-  pthread_t wthr;
+ // pthread_t wthr; //commenting to only have one pthread
   struct timeval start_time, end_time;
 
   struct sockaddr_in cliaddr;
@@ -1515,6 +1522,21 @@ int main(int argc, char **argv) {
     struct sockaddr_in serveraddr;
     struct hostent *server;
 
+    pthread_t rthr[10000];
+  pthread_t tthr[10000];
+  pthread_t cputhread[10000];
+  pthread_t wthr[10000], pthr[10000],rwthr[10000];
+  pthread_t thread_id[10000];
+
+ // pthread_t rthr[numo], pthr[numo], rwthr[numo];
+ // pthread_t wthr[numo], pthr[numo];
+  static pthread_cond_t report_cond[10000];
+static pthread_mutex_t report_mutex[10000];
+
+
+
+
+
     int s, slen=sizeof(serveraddr);
     int ai_family;
 
@@ -1533,8 +1555,8 @@ int main(int argc, char **argv) {
 
         
 
-        pthread_create(&cputhread,NULL,print_all,NULL);
-        pthread_detach(cputhread);
+        // pthread_create(&cputhread,NULL,print_all,NULL);
+        // pthread_detach(cputhread);
         int cnt = 0;
           while ((dir = readdir(d)) != NULL)
             { 
@@ -1542,8 +1564,9 @@ int main(int argc, char **argv) {
               //Condition to check regular file.
                if(dir->d_type==DT_REG){
                 //cfg.bytes = cfg.bytes * cnt;
-                pthread_t rthr;
-                pthread_t tthr;
+                
+                // pthread_t rthr; //commenting to only have one pthread
+                // pthread_t tthr; //commenting to only have one pthread
                 
 
 
@@ -1619,14 +1642,14 @@ int main(int argc, char **argv) {
 
   if (cfg.interval) {
     
-    pthread_mutex_init(&report_mutex, NULL);
-    pthread_cond_init(&report_cond, NULL);
-    pthread_create(&rthr, NULL, bw_report_thread, &cfg.interval);
+    pthread_mutex_init(&report_mutex[count], NULL);
+    pthread_cond_init(&report_cond[count], NULL);
+    pthread_create(&rthr[count], NULL, bw_report_thread, &cfg.interval);
 #ifdef HAVE_SETAFFINITY
     if (cfg.affinity >= 0) {
       CPU_ZERO(&cpu_set);
       CPU_SET(cfg.affinity+1%ncores, &cpu_set);
-      if (pthread_setaffinity_np(rthr, sizeof(cpu_set_t), &cpu_set) != 0)
+      if (pthread_setaffinity_np(rthr[count], sizeof(cpu_set_t), &cpu_set) != 0)
         err(1, "couldn't change THREAD affinity");
     }
 #endif
@@ -1635,7 +1658,7 @@ int main(int argc, char **argv) {
   if (cfg.time && !cfg.fname)
   {
     
-    pthread_create(&tthr, NULL, time_thread, &cfg.time);
+    pthread_create(&tthr[count], NULL, time_thread, &cfg.time);
   }
    
    
@@ -1695,7 +1718,7 @@ int main(int argc, char **argv) {
   if (!cfg.server) {
  
     int i, n;
-  pthread_t rthr, pthr, rwthr;
+ // pthread_t rthr, pthr, rwthr; //commenting to only have one pthread
   struct xfer_context *ctx = NULL;
   XFER_RDMA_buf_handle *hptr;
 
@@ -1780,7 +1803,7 @@ int main(int argc, char **argv) {
   int tt=0;
 
 
-    pthread_t thread_id;
+    //pthread_t thread_id; //commenting to only have one pthread
     printf("Before Thread\n");
     tt = rdma_slab_bufs_reg(&cfg);
     
@@ -1828,11 +1851,11 @@ int main(int argc, char **argv) {
 
   // start the file reader thread
   if (full_path)
-    pthread_create(&rthr, NULL, fread_thread,&cfg);
+    pthread_create(&rthr[count], NULL, fread_thread,&cfg);
 
   // start RDMA threads
-  pthread_create(&pthr, NULL, rdma_poll_thread, &cfg);
-  pthread_create(&rwthr, NULL, rdma_write_thread,&cfg);
+  pthread_create(&pthr[count], NULL, rdma_poll_thread, &cfg);
+  pthread_create(&rwthr[count], NULL, rdma_write_thread,&cfg);
 
   
   
@@ -1842,21 +1865,21 @@ int main(int argc, char **argv) {
   gettimeofday(&start_time, NULL);
 
   if (cfg.interval)
-    pthread_cond_signal(&report_cond);
+    pthread_cond_signal(&report_cond[count]);
 
   if (full_path) {
-    pthread_join(rthr, NULL);
-    pthread_join(rwthr, NULL);
+    pthread_join(rthr[count], NULL);
+    pthread_join(rwthr[count], NULL);
     
   }
   else {
     int c = psd_slabs_buf_get_pcount(cfg.slab);
     for (i=0; i<c; i++)
       cfg.slab->entries[i]->status |= PSB_SEND_READY;
-    pthread_join(rwthr, NULL);
+    pthread_join(rwthr[count], NULL);
   }
 
-  pthread_join(pthr, NULL);
+  pthread_join(pthr[count], NULL);
 
   msg.type = MSG_STOP;
   n = send(cfg.cntl_sock, &msg, sizeof(struct message), 0);
@@ -1899,7 +1922,7 @@ if (cfg.fname) {
 
 
   if (cfg.interval)
-    pthread_cancel(rthr);
+    pthread_cancel(rthr[count]);
     
 
 #ifdef WITH_XSP
@@ -1965,8 +1988,8 @@ if (cfg.fname) {
     
       closedir(d);
 
-    pthread_cancel(cputhread);
-    // pthread_kill(cputhread,SIGKILL);
+    //pthread_cancel(cputhread);
+    
     
     
     
@@ -2155,7 +2178,7 @@ printf("\n File being Processed: %d \n",i);
       //do_rdma_server(&cfg);
       
       int i, n, lfd, clilen;
-  pthread_t wthr, pthr;
+  //pthread_t wthr, pthr; //commenting to only have one pthread
   struct mdata *pdata;
   struct xfer_context *ctx = NULL;
   XFER_RDMA_buf_handle *hptr;
