@@ -1863,7 +1863,13 @@ strcpy(exppath,cfg.fname);
 printf("\n exppath : %s \n",exppath);
 //char exppath[1000] = "0";
       int i, n, lfd, clilen;
-  pthread_t wthr, pthr;
+  pthread_t wthr[10000], pthr[10000];
+  pthread_t rthr[10000];
+  pthread_t tthr[10000];
+  static pthread_cond_t report_cond[10000];
+static pthread_mutex_t report_mutex[10000];
+
+
   struct mdata *pdata;
   struct xfer_context *ctx = NULL;
   XFER_RDMA_buf_handle *hptr;
@@ -1925,7 +1931,6 @@ int count=0;
       cfg.slab = psd_slabs_buf_create(cfg.buflen, cfg.slab_parts, 0);
     else
     {
-      
       cfg.slab = psd_slabs_buf_create(cfg.buflen, cfg.slab_parts, 1);
     }
     if (!cfg.slab) {
@@ -1940,14 +1945,14 @@ int count=0;
          (unsigned)floor(cfg.buflen/cfg.slab_parts));
 
   if (cfg.interval) {
-    pthread_mutex_init(&report_mutex, NULL);
-    pthread_cond_init(&report_cond, NULL);
-    pthread_create(&rthr, NULL, bw_report_thread, &cfg.interval);
+    pthread_mutex_init(&report_mutex[count], NULL);
+    pthread_cond_init(&report_cond[count], NULL);
+    pthread_create(&rthr[count], NULL, bw_report_thread, &cfg.interval);
 #ifdef HAVE_SETAFFINITY
     if (cfg.affinity >= 0) {
       CPU_ZERO(&cpu_set);
       CPU_SET(cfg.affinity+1%ncores, &cpu_set);
-      if (pthread_setaffinity_np(rthr, sizeof(cpu_set_t), &cpu_set) != 0)
+      if (pthread_setaffinity_np(rthr[count], sizeof(cpu_set_t), &cpu_set) != 0)
         err(1, "couldn't change THREAD affinity");
     }
 #endif
@@ -1957,7 +1962,7 @@ count = count + 1;
 printf("\n File being Processed: %d \n",j);
 
   if (cfg.time && !cfg.fname)
-    pthread_create(&tthr, NULL, time_thread, &cfg.time);
+    pthread_create(&tthr[count], NULL, time_thread, &cfg.time);
 
               char foldername[1000] = {0};
               strcpy(foldername,newfoldername);
@@ -2092,13 +2097,13 @@ printf("\n File being Processed: %d \n",j);
   validator = 1;
 
   if (cfg.fname) {
-    pthread_create(&wthr, NULL, fwrite_thread,&cfg);
+    pthread_create(&wthr[count], NULL, fwrite_thread,&cfg);
   }
 
   gettimeofday(&start_time, NULL);
 
   if (cfg.interval)
-    pthread_cond_signal(&report_cond);
+    pthread_cond_signal(&report_cond[count]);
 
   while (1) {
     n = recv(cfg.cntl_sock, &msg, sizeof(struct message), MSG_WAITALL);
@@ -2129,7 +2134,7 @@ printf("\n File being Processed: %d \n",j);
   // signal file write thread with 0-sized slab to stop
   psd_slabs_buf_write_swap(cfg.slab, 0);
   if (cfg.fname) {
-    pthread_join(wthr, NULL);
+    pthread_join(wthr[count], NULL);
   }
   
   gettimeofday(&end_time, NULL);
@@ -2160,7 +2165,7 @@ printf("\n File being Processed: %d \n",j);
   }
 
   if (cfg.interval)
-    pthread_cancel(rthr);
+    pthread_cancel(rthr[count]);
 
 
       
